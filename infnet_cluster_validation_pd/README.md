@@ -2,21 +2,47 @@
 
 <img style='width:350px' src='./assets/logo_infnetv2.png' alt='Infnet logo'>
 
-Projeto desenvolvido como parte da disciplina de Validação de Modelos de Clusterização, aplicando técnicas para avaliar a qualidade dos agrupamentos gerados por algoritmos de aprendizado não supervisionado.
+Projeto desenvolvido para validar a segmentação de dados realizada por modelos de aprendizado não supervisionado. A validação é um passo fundamental para garantir que os grupos formados possuam significado e aplicabilidade prática.
 
 ## Índice
 
-- <a href='#tecnologias'>1. Tecnologias</a>
-- <a href='#contexto'>2. Contexto</a>
-- <a href='#análises'>3. Análises</a>
-    - <a href='#análise-exploratória'>3.1. Análise exploratória</a>
-    - <a href='#k-means'>3.2. K-Means</a>
-    - <a href='#dbscan'>3.3. DBSCAN</a>
-    - <a href='#comparação-entre-os-modelos'>3.4. Comparação entre os modelos
-- <a href='#conclusões-gerais'>4. Conclusões gerais</a>
-    - <a href='#conclusões-da-análise-do-k-means'>4.1. Conclusões da análise do K-Means</a>
-    - <a href='#conclusões-da-análise-do-dbscan'>4.2. Conclusões da análise do DBSCAN</a>
-- <a href='#sobre-mim'>5. Sobre mim</a> 
+- <a href='#contexto'>1. Contexto</a>
+- <a href='#tecnologias'>2. Tecnologias</a>
+- <a href='#análise-exploratória'>3. Análise exploratória</a>
+- <a href='#modelagem'>4. Modelagem</a>
+    - <a href='#k-means'>4.1. K-Means</a>
+    - <a href='#dbscan'>4.2. DBSCAN</a>
+- <a href='#métricas-de-validação'>5. Métricas de validação</a>
+    - <a href='#índice-de-silhueta'>5.1. Índice de Silhueta</a>
+    - <a href='#índice-davies-bouldin'>5.2. Índice Davies-Bouldin</a>
+    - <a href='#índice-calinski-harabasz'>5.3. Índice Calinski-Harabasz</a>
+- <a href='#comparação-entre-os-modelos'>6. Comparação entre os modelos
+- <a href='#conclusões-gerais'>7. Conclusões gerais</a>
+    - <a href='#conclusões-da-análise-do-k-means'>7.1. Conclusões da análise do K-Means</a>
+    - <a href='#conclusões-da-análise-do-dbscan'>7.2. Conclusões da análise do DBSCAN</a>
+- <a href='#sobre-mim'>8. Sobre mim</a> 
+
+
+## Contexto
+
+⬆️ <a href='#índice'>Voltar ao início</a>
+
+A clusterização é uma técnica utilizada para segmentar dados com base em suas características, permitindo identificar padrões e estruturar grupos de forma automática. No entanto, para que esses agrupamentos sejam úteis, é essencial validar sua qualidade. Este projeto tem como objetivo aplicar diferentes modelos de clusterização e avaliar seus resultados utilizando métricas apropriadas.
+
+Os dados analisados consistem em transações bancárias realizadas por clientes, contendo informações relevantes como idade, saldo bancário e valores transacionados. A validação desses clusters ajuda a identificar perfis de clientes, avaliar riscos e criar estratégias personalizadas para cada grupo.
+
+O arquivo possui as seguintes colunas:
+
+- _id_transacao_ (TransactionID): Id da transferência feita
+- _id_cliente_ (CustomerID): Id do cliente
+- _idade_calculada_ (CustomerDOB): Idade do cliente no período da transferência
+- _genero_ (CustGender): Gênero sexual do cliente
+- _localizazao_ (CustLocation): Localização do cliente
+- _saldo_ (CustAccountBalance): Saldo da conta do cliente após a transferência
+- _data_transacao_ (TransactionDate): Data da transferência
+- _hora_transacao_ (TransactionTime): Hora da transferência em timestamp Unix (o número de segundos que se passaram desde a data da coluna anterior)
+- _quantia_transacao (INR)_ (TransactionAmount (INR)): Valor da transferência em rúpias indianas (INR)
+
 
 ## Tecnologias
 
@@ -41,32 +67,9 @@ Principais bibliotecas:
 - <img style='width:30px; vertical-align: middle; margin-right: 10px' src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt='seaborn_logo'> Seaborn
 
 
-## Contexto
+## Análise Exploratória
 
 ⬆️ <a href='#índice'>Voltar ao início</a>
-
-A clusterização é amplamente utilizada para segmentar dados, mas a qualidade dos agrupamentos gerados pode variar conforme o modelo e os hiperparâmetros utilizados. Este projeto tem como objetivo validar os clusters formados a partir dos algoritmos K-Means e DBSCAN, utilizando métricas como índice de Silhueta, coeficiente de similaridade e redução de dimensionalidade para avaliar a coesão e separação entre os grupos.
-
-O conjunto de dados utilizado contém informações sobre transações bancárias, incluindo idade, saldo da conta, valor da transação e localização do cliente. A validação dos clusters é essencial para compreender se os agrupamentos refletem padrões reais ou se são apenas artefatos estatísticos.
-
-O arquivo possui as seguintes colunas:
-
-- _id_transacao_ (TransactionID): Id da transferência feita
-- _id_cliente_ (CustomerID): Id do cliente
-- _idade_calculada_ (CustomerDOB): Idade do cliente no período da transferência
-- _genero_ (CustGender): Gênero sexual do cliente
-- _localizazao_ (CustLocation): Localização do cliente
-- _saldo_ (CustAccountBalance): Saldo da conta do cliente após a transferência
-- _data_transacao_ (TransactionDate): Data da transferência
-- _hora_transacao_ (TransactionTime): Hora da transferência em timestamp Unix (o número de segundos que se passaram desde a data da coluna anterior)
-- _quantia_transacao (INR)_ (TransactionAmount (INR)): Valor da transferência em rúpias indianas (INR)
-
-
-## Análises
-
-⬆️ <a href='#índice'>Voltar ao início</a>
-
-### Análise Exploratória
 
 Antes de aplicar os modelos de clusterização, realizamos uma análise exploratória dos dados para entender sua distribuição e identificar possíveis outliers. Foram utilizados boxplots para visualizar a dispersão das variáveis numéricas, permitindo observar padrões como a variação dos saldos dos clientes e os valores das transações.
 
@@ -74,32 +77,57 @@ Os gráficos revelaram que algumas variáveis apresentavam grande variação, su
 
 <p align='center'> <img style='max-width:100%; height:auto; align:center' src='./assets/boxplot.png' alt="Boxplot dos dados"> </p>
 
+## Modelagem
+
+⬆️ <a href='#índice'>Voltar ao início</a>
+
 ### K-Means
 
-O K-Means segmentou os clientes em grupos distintos com base em idade, saldo e valor das transações. A análise dos clusters revelou padrões importantes: clientes com maior retenção de saldo foram agrupados separadamente dos que possuem maior movimentação financeira.
+O K-Means é um algoritmo de clusterização que busca dividir os dados em grupos homogêneos com base na minimização da variância interna de cada cluster. Ele utiliza um número pré-definido de clusters e atualiza os centróides até a convergência.
 
-O modelo mostrou-se eficiente na formação de agrupamentos homogêneos, mas foi sensível a outliers. Alguns clientes com padrões de transação atípicos acabaram influenciando a definição dos centroides, o que pode comprometer a separação dos grupos. Para resolver essa questão, técnicas de normalização e remoção de valores discrepantes podem ser aplicadas antes da clusterização.
+Neste projeto, implementei o K-Means para segmentar os clientes com base no saldo da conta e nos valores transacionados. A análise dos clusters revelou padrões distintos, indicando diferentes perfis de clientes. Foi possível identificar grupos com maior retenção de saldo e outros que realizam transações mais frequentes.
 
 <p align='center'> <img style='max-width:85%; height:auto; align:center' src='./assets/kmeans.png' alt="Kmeans plot"> </p>
 
 ### DBSCAN
 
-O DBSCAN identificou clusters baseados na densidade dos dados, separando clientes que apresentam comportamento mais homogêneo daqueles que possuem padrões de transação únicos. Um dos grandes benefícios do DBSCAN foi a capacidade de detectar outliers automaticamente, eliminando ruídos que poderiam distorcer os agrupamentos.
+O DBSCAN (Density-Based Spatial Clustering of Applications with Noise) é um modelo que identifica clusters com base na densidade dos dados. Ele não requer um número fixo de clusters e é eficiente na detecção de outliers.
 
-Por outro lado, a escolha dos hiperparâmetros eps e MinPts se mostrou crucial para o desempenho do modelo. Valores inadequados desses parâmetros resultaram em clusters excessivamente fragmentados ou na falha do algoritmo em detectar agrupamentos significativos. Com o ajuste correto, o DBSCAN conseguiu segmentar os clientes de forma mais flexível do que o K-Means.
+No projeto, o DBSCAN foi aplicado para identificar padrões de transação e segmentar clientes de acordo com seu comportamento. O modelo foi eficaz na separação de clientes com movimentações atípicas, isolando-os como outliers. Entretanto, a escolha dos hiperparâmetros eps e MinPts foi determinante para a qualidade dos agrupamentos.
 
 <p align='center'> <img style='max-width:85%; height:auto; align:center' src='./assets/dbscan.png' alt="DBSCAN plot"> </p>
 
-### Comparação entre os Modelos
+## Métricas de validação
 
-A comparação entre os modelos revelou que o K-Means foi mais eficiente na definição de clusters compactos e bem separados, enquanto o DBSCAN foi melhor na identificação de padrões de comportamento atípico. O índice de Silhueta mostrou que, em certos cenários, o K-Means obteve melhores resultados em termos de separação entre clusters, mas sua sensibilidade a outliers foi uma limitação.
+⬆️ <a href='#índice'>Voltar ao início</a>
 
-O DBSCAN, por sua vez, demonstrou maior adaptabilidade, identificando grupos mais flexíveis sem a necessidade de definir um número fixo de clusters. No entanto, seu desempenho variou significativamente conforme a escolha dos hiperparâmetros. Em aplicações práticas, a combinação das abordagens pode ser útil para obter um panorama mais completo da segmentação dos clientes.
+### Índice de Silhueta
+
+O índice de Silhueta mede a qualidade dos clusters avaliando a separação entre os grupos e a coesão interna. Quanto maior o valor, melhor a segmentação dos dados. Foi aplicado para comparar K-Means e DBSCAN, indicando que o K-Means apresentou melhores resultados em termos de separação entre os clusters.
+
+### Índice Davies-Bouldin
+
+O índice Davies-Bouldin avalia a compacidade e separação dos clusters. Valores menores indicam uma melhor estruturação dos agrupamentos. Durante a análise, o K-Means obteve menor valor para essa métrica, sugerindo que os clusters estavam mais bem definidos.
+
+### Índice Calinski-Harabasz
+
+O índice Calinski-Harabasz mede a relação entre a variância entre clusters e a variância interna. Quanto maior o valor, melhor a separação dos grupos. Essa métrica foi aplicada para validar a escolha do número de clusters no K-Means, reforçando a eficácia do modelo para essa base de dados.
+
+
+## Comparação entre os Modelos
+
+⬆️ <a href='#índice'>Voltar ao início</a>
+
+A análise comparativa mostrou que o K-Means foi mais eficiente para segmentações com grupos bem separados, principalmente quando os dados foram previamente normalizados. Ele apresentou maiores valores no índice de Silhueta, indicando que os clusters estavam bem definidos. No entanto, o modelo se mostrou sensível a outliers, já que valores extremos deslocam os centroides, impactando a qualidade da segmentação. Isso significa que, sem um pré-processamento adequado, alguns clientes podem ser erroneamente classificados em clusters diferentes.
+
+Por outro lado, o DBSCAN se mostrou mais robusto na detecção de padrões atípicos e não exige a definição prévia do número de clusters. Sua principal vantagem foi a identificação de outliers automaticamente, algo que o K-Means não consegue fazer de forma nativa. No entanto, a escolha dos hiperparâmetros eps e MinPts foi crítica para garantir resultados significativos. Se mal ajustados, o modelo pode criar clusters muito fragmentados ou classificar grande parte dos dados como ruído. Assim, o DBSCAN se mostrou mais indicado para situações em que há distribuição desigual de dados e a presença de ruídos é um fator relevante.
 
 
 ## Conclusões gerais
 
 ⬆️ <a href='#índice'>Voltar ao início</a>
+
+Os resultados indicam que o K-Means é ideal para segmentações mais estruturadas, enquanto o DBSCAN é útil para detectar padrões menos rígidos e outliers. Cada abordagem pode ser útil dependendo do objetivo da análise, permitindo diferentes estratégias para segmentação de clientes e análise de riscos.
 
 ### Conclusões da análise do K-Means
 
@@ -140,6 +168,10 @@ O DBSCAN, por sua vez, agrupou os dados da seguinte forma:
 Segundo o DBSCAN, os clientes do _Cluster 1_ e do _Cluster 2_ são clientes que possuem um alto capital de giro e não retem quase nada de seu patrimônio.
 
 Já os clientes do _Cluster 0_ são clientes que retem muito mais patrimônio, sendo mais indicados para oferecer produtos de investimento e também confirmando o perfil traçado pelo KMeans.
+
+Comparando os resultados, o Cluster 0 do DBSCAN se alinha ao Cluster 3 do K-Means, ambos representando clientes com alta retenção de saldo. Já os Clusters 1 e 2 do DBSCAN correspondem ao Cluster 2 do K-Means, que reúne clientes com maior giro de capital. A principal diferença é que o DBSCAN identificou automaticamente clientes fora do padrão, enquanto o K-Means exigiu definição prévia do número de clusters.
+
+Essa análise permite utilizar os clusters para diferentes estratégias bancárias. Os clientes com alta retenção de saldo podem ser indicados para produtos de investimento e crédito, enquanto aqueles com baixo saldo e alta movimentação exigem mais cautela na concessão de crédito, podendo representar um risco maior de inadimplência.
 
 ## Sobre mim
 
