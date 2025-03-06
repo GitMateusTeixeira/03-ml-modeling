@@ -1,27 +1,53 @@
-# Projeto de Disciplina de Algoritmos de Inteligência Artificial para Clusterização
+# Projeto de Disciplina de Validação de Modelos de Clusterização
 
 <img style='width:350px' src='./assets/logo_infnetv2.png' alt='Infnet logo'>
 
-Projeto de disciplina de clusterização, utilizando modelos de aprendizado não supervisionado.
+Projeto desenvolvido como parte da disciplina de Validação de Modelos de Clusterização, aplicando técnicas para avaliar a qualidade dos agrupamentos gerados por algoritmos de aprendizado não supervisionado.
 
 ## Índice
 
 - <a href='#tecnologias'>1. Tecnologias</a>
 - <a href='#contexto'>2. Contexto</a>
 - <a href='#análises'>3. Análises</a>
-- <a href='#sobre-mim'>4. Sobre mim</a> 
+    - <a href='#análise-exploratória'>3.1. Análise exploratória</a>
+    - <a href='#k-means'>3.2. K-Means</a>
+    - <a href='#dbscan'>3.3. DBSCAN</a>
+    - <a href='#comparação-entre-os-modelos'>3.4. Comparação entre os modelos
+- <a href='#conclusões-gerais'>4. Conclusões gerais</a>
+    - <a href='#conclusões-da-análise-do-k-means'>4.1. Conclusões da análise do K-Means</a>
+    - <a href='#conclusões-da-análise-do-dbscan'>4.2. Conclusões da análise do DBSCAN</a>
+- <a href='#sobre-mim'>5. Sobre mim</a> 
 
 ## Tecnologias
+
+<img style='width:30px; vertical-align: middle; margin-right: 10px' src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/anaconda/anaconda-original.svg' alt='Anaconda logo'> Anaconda v. 23.7.4 (ambiente virtual chamado '⚙️ venv_clusterizacao2')
 
 <img style='width:30px; vertical-align: middle; margin-right: 10px;' src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg' alt='Jupyter logo'> Jupyter Notebook v. 5.7.2
 
 <img style='width:30px; vertical-align: middle; margin-right: 10px' src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg' alt='Python logo'> Python v. 3.11.11
 
+Principais bibliotecas:
 
-<img style='width:30px; vertical-align: middle; margin-right: 10px' src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/anaconda/anaconda-original.svg' alt='Anaconda logo'> Anaconda v. 23.7.4 (ambiente virtual chamado '⚙️ venv_clusterizacao2')
+- <img style='width:30px; vertical-align: middle; margin-right: 10px' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" alt='matplotlib_logo'> Matplotlib
+
+- <img style='width:30px; vertical-align: middle; margin-right: 10px' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" alt='numpy_logo'> Numpy
+
+- <img style='width:30px; vertical-align: middle; margin-right: 10px' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt='pandas_logo'> Pandas
+
+- <img style='width:30px; vertical-align: middle; margin-right: 10px' src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg' alt='scikit-learn_logo'> Scikit-learn
+
+- <img style='width:30px; vertical-align: middle; margin-right: 10px' src="https://scipy.org/images/logo.svg" alt='scipy_logo'> Scipy
+
+- <img style='width:30px; vertical-align: middle; margin-right: 10px' src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt='seaborn_logo'> Seaborn
 
 
 ## Contexto
+
+⬆️ <a href='#índice'>Voltar ao início</a>
+
+A clusterização é amplamente utilizada para segmentar dados, mas a qualidade dos agrupamentos gerados pode variar conforme o modelo e os hiperparâmetros utilizados. Este projeto tem como objetivo validar os clusters formados a partir dos algoritmos K-Means e DBSCAN, utilizando métricas como índice de Silhueta, coeficiente de similaridade e redução de dimensionalidade para avaliar a coesão e separação entre os grupos.
+
+O conjunto de dados utilizado contém informações sobre transações bancárias, incluindo idade, saldo da conta, valor da transação e localização do cliente. A validação dos clusters é essencial para compreender se os agrupamentos refletem padrões reais ou se são apenas artefatos estatísticos.
 
 O arquivo possui as seguintes colunas:
 
@@ -38,37 +64,44 @@ O arquivo possui as seguintes colunas:
 
 ## Análises
 
-O projeto realiza análises gráficas de clusterização do arquivo '🏦 bank-transactions.csv' que possui informações de transações bancárias realizadas entre seus clientes.
+⬆️ <a href='#índice'>Voltar ao início</a>
 
-Para isso, o projeto faz uma análise exploratória da faixa de distribuição dos dados com boxplot, para verificar se há ou não a presença de outliers.
+### Análise Exploratória
 
-<p align='center'>
-    <img style='max-width:100%; height:auto; align:center' src='./assets/boxplot.png' alt="bloxplot">
-</p>
+Antes de aplicar os modelos de clusterização, realizamos uma análise exploratória dos dados para entender sua distribuição e identificar possíveis outliers. Foram utilizados boxplots para visualizar a dispersão das variáveis numéricas, permitindo observar padrões como a variação dos saldos dos clientes e os valores das transações.
 
-Além disso, o projeto implementa os modelos de K-Means, e DBSCAN, onde, basicamente:
+Os gráficos revelaram que algumas variáveis apresentavam grande variação, sugerindo a presença de valores discrepantes que poderiam influenciar os agrupamentos. Essa análise inicial foi fundamental para ajustar os parâmetros dos modelos e garantir uma segmentação mais precisa dos clientes.
 
-- **K-Means**: um modelo de agrupamento (clusterização) de dados numéricos com o objetivo de agrupar dados próximos e encontrar o centro de cada grupo (centroide) até a sua convergência (ponto em que o agrupamento dos dados e o deslocamento dos centroides se torna mínimo ou nulo). Para isso, ele utiliza o hiperparâmetro do número de clusters;
+<p align='center'> <img style='max-width:100%; height:auto; align:center' src='./assets/boxplot.png' alt="Boxplot dos dados"> </p>
 
-- **DBSCAN**: este modelo classifica os dados nos grupos principais e isola os possíveis outliers (dados cujos valores estão muito equidistantes da maioria). Para isso, ele utiliza dois hiperparâmetros: o "eps" (o tamanho do raio de busca) e o "MinPts" (o número mínimo de pontos necessários que o raio de busca daquele dado precisa encontrar). Este modelo é muito usado para dados mais densos.
+### K-Means
 
-O algoritmo imprime gráficos de dispersão para o K-Means:
+O K-Means segmentou os clientes em grupos distintos com base em idade, saldo e valor das transações. A análise dos clusters revelou padrões importantes: clientes com maior retenção de saldo foram agrupados separadamente dos que possuem maior movimentação financeira.
 
-<p align='center'>
-    <img style='max-width:85%; height:auto; align:center' src='./assets/kmeans.png' alt="Kmeans plot">
-</p>
+O modelo mostrou-se eficiente na formação de agrupamentos homogêneos, mas foi sensível a outliers. Alguns clientes com padrões de transação atípicos acabaram influenciando a definição dos centroides, o que pode comprometer a separação dos grupos. Para resolver essa questão, técnicas de normalização e remoção de valores discrepantes podem ser aplicadas antes da clusterização.
 
-E para o DBSCAN:
+<p align='center'> <img style='max-width:85%; height:auto; align:center' src='./assets/kmeans.png' alt="Kmeans plot"> </p>
 
-<p align='center'>
-    <img style='max-width:85%; height:auto; align:center' src='./assets/dbscan.png' alt="DBSCAN plot">
-</p>
+### DBSCAN
 
-Para isso, o algoritmo realiza diversas buscas sobre o score da silhueta de cada um dos modelos encontrados.
+O DBSCAN identificou clusters baseados na densidade dos dados, separando clientes que apresentam comportamento mais homogêneo daqueles que possuem padrões de transação únicos. Um dos grandes benefícios do DBSCAN foi a capacidade de detectar outliers automaticamente, eliminando ruídos que poderiam distorcer os agrupamentos.
 
-No final, o algortimo ainda realiza uma checagem de similaridade entre os modelos de modo a demonstrar a diferença entre as metricas e otimizações dde cada modelo.
+Por outro lado, a escolha dos hiperparâmetros eps e MinPts se mostrou crucial para o desempenho do modelo. Valores inadequados desses parâmetros resultaram em clusters excessivamente fragmentados ou na falha do algoritmo em detectar agrupamentos significativos. Com o ajuste correto, o DBSCAN conseguiu segmentar os clientes de forma mais flexível do que o K-Means.
 
-### Análise do KMeans
+<p align='center'> <img style='max-width:85%; height:auto; align:center' src='./assets/dbscan.png' alt="DBSCAN plot"> </p>
+
+### Comparação entre os Modelos
+
+A comparação entre os modelos revelou que o K-Means foi mais eficiente na definição de clusters compactos e bem separados, enquanto o DBSCAN foi melhor na identificação de padrões de comportamento atípico. O índice de Silhueta mostrou que, em certos cenários, o K-Means obteve melhores resultados em termos de separação entre clusters, mas sua sensibilidade a outliers foi uma limitação.
+
+O DBSCAN, por sua vez, demonstrou maior adaptabilidade, identificando grupos mais flexíveis sem a necessidade de definir um número fixo de clusters. No entanto, seu desempenho variou significativamente conforme a escolha dos hiperparâmetros. Em aplicações práticas, a combinação das abordagens pode ser útil para obter um panorama mais completo da segmentação dos clientes.
+
+
+## Conclusões gerais
+
+⬆️ <a href='#índice'>Voltar ao início</a>
+
+### Conclusões da análise do K-Means
 
 Da análise, pode-se depreender que o K-Means clusterizou os clientes da seguinte forma:
 
@@ -90,7 +123,7 @@ Os clientes do _Cluster 2_ e parte do _Cluster 1_ não são tão indicados para 
 
 E ainda que não faça parte da moda, observou-se que os clientes mais velhos (de 60 a 85 anos) possuem uma maior retenção de seu saldo (entre 80% e 100%), como evidenciado no _Cluster 5_.
 
-### Análise do DBSCAN
+### Conclusões da análise do DBSCAN
 
 O DBSCAN, por sua vez, agrupou os dados da seguinte forma:
 
@@ -110,33 +143,37 @@ Já os clientes do _Cluster 0_ são clientes que retem muito mais patrimônio, s
 
 ## Sobre mim
 
+⬆️ <a href='#índice'>Voltar ao início</a>
+
 <div style="display: flex; align-items: center;">
     <img src="https://avatars.githubusercontent.com/u/156105588?v=4" alt="Minha foto" style="width:150px; border-radius: 50%; margin-right: 15px;">
     <div>
         <div style="font-size: 16px; font-weight: bold">Mateus Teixeira</div>
+        Cientista de dados
+        <br>
         Pós-graduando em Inteligência Artifcial pela INFNET
         <br>
         <br>
         <a href="mailto:pessoal.mtr@gmail.com"
         target="_blank">
             <img 
-            src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" 
+            src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&labelColor=555&logoColor=white" 
             alt="E-mail" 
-            style='height: 25px; margin-right: 10px; border-radius: 5px;'>
+            height='25'/>
         </a>
         <a href="https://www.linkedin.com/in/mateusteixeira/" 
         target="_blank">
             <img 
-            src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" 
+            src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&labelColor=555&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNklEQVR4nO3XSUoDQRgG0NrFTRyiuBA8lARvIujanROKnigICh5AVASHkDPECZ60yULFVDqamEqoB73rGj6q6q/uELIsmz6o4QgPeEUTx1gMEzL5Kz+7xnxIGQ7F7YWU6WybmNuQMrz0CfAcUobHPgHuQ8p0qk/MfpiAKnTTY/KXyVehApZw0q3/xT1whwMsfLyQZVNMCcNohxVsoNEt3U9o4RRbWE0yACrYLnFhtrGLmWQCYA4XBnOO5VQCnA04+c/tKikE+IudSQ/QLnWwEw5Q2EwhQFEy66h2n7XIH+B3jXEHKCZf6/EB2SzRvjXuAPXIuOsl2r+NO0A1Mu7sb8f+twCjGvuLHCAi9GEIfeQViMkrIG+hjlEdQEPoIx/imLwC8hbqyIe4ByWEUXWSTIAsy8JEeQd/X93eUJrQcwAAAABJRU5ErkJggg==" 
             alt="LinkedIn" 
-            style='height: 25px; margin-right: 10px; border-radius: 5px;'>
+             height='25'/>
         </a>
         <a href="https://www.instagram.com/omateusteixeira" 
         target="_blank">
             <img 
-            src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" 
+            src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&labelColor=555&logoColor=white" 
             alt="Instagram" 
-            style='height: 25px; border-radius: 5px;'>
+             height='25'/>
         </a>
     </div>
 </div>
