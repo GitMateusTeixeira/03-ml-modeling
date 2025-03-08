@@ -1,9 +1,9 @@
 # Projeto de Disciplina de Algoritmos de Inteligência Artificial para Clusterização
 
-<img style='width:350px' src='./assets/logo_infnetv2.png' alt='Infnet logo'>
-
+<img style='width:350px' src='./assets/logo_infnetv2.png' alt='Infnet logo' align='left'>
 Este projeto foi desenvolvido como parte da disciplina de Algoritmos de Inteligência Artificial para Clusterização, com o objetivo de aplicar técnicas de aprendizado não supervisionado para análise e agrupamento de dados. Foram utilizados diferentes modelos de clusterização para segmentar os dados e validar os agrupamentos formados, permitindo extrair insights valiosos sobre os padrões encontrados.
-
+<br>
+<br>
 Durante o desenvolvimento, aprofundei meus conhecimentos sobre a implementação de diferentes algoritmos de clusterização, seus desafios, vantagens e as métricas utilizadas para validar os resultados obtidos.
 
 
@@ -192,9 +192,12 @@ A análise dos clusters demonstrou que a segmentação socioeconômica pode ser 
 ⬆️ <a href='#índice'>Voltar ao início</a>
 
 <div style="display: flex; align-items: center;">
-    <img src="https://avatars.githubusercontent.com/u/156105588?v=4" alt="Minha foto" style="width:150px; border-radius: 50%; margin-right: 15px;">
+    <img src="https://avatars.githubusercontent.com/u/156105588?v=4" alt="Minha foto" align='left' style="width:150px; border-radius: 50%; margin-right: 15px;">
     <div>
-        <div style="font-size: 16px; font-weight: bold">Mateus Teixeira</div>
+        <div>
+            <img src="./assets/logo_mt_ds.png" alt="mt_logo" style='width: 80px; vertical-align: middle;' align='left'>
+            <span style="">Mateus Teixeira</span>
+        </div>
         Cientista de dados
         <br>
         Pós-graduando em Inteligência Artifcial pela INFNET
