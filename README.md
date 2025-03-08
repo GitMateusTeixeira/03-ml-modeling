@@ -161,7 +161,7 @@ Alguns dos principais aprendizados foram:
     <img src="https://avatars.githubusercontent.com/u/156105588?v=4" alt="Minha foto" align='left' style="width:150px; border-radius: 50%; margin-right: 15px;">
     <div>
         <div>
-            <img src="./assets/logo_mt_white.png" alt="mt_logo" style='width: 80px; vertical-align: middle;' align='left'>
+            <img src="./assets/logo_mt_ds.png" alt="mt_logo" style='width: 80px; vertical-align: middle;' align='left'>
             <span style="">Mateus Teixeira</span>
         </div>
         Cientista de dados
