@@ -2,28 +2,28 @@
 
 <img style='width:350px' src='./assets/logo_infnetv2.png' alt='Infnet logo'>
 
-Projeto de disciplina de clusterização, utilizando modelos de aprendizado não supervisionado.
+Este projeto faz parte da disciplina de Algoritmos de Inteligência Artificial para Classificação e tem como objetivo aplicar técnicas de aprendizado supervisionado para a classificação da qualidade de vinhos com base em suas características físico-químicas.
 
 ## Índice
 
-- <a href='#tecnologias'>1. Tecnologias</a>
-- <a href='#contexto'>2. Contexto</a>
-- <a href='#análises'>3. Análises</a>
-    - <a href='#31-exploração-dos-dados'>3.1. Exploração de dados
-    - <a href='#32-modelagem'>3.2. Modelagem
-    - <a href='#33-validação-cruzada-k-fold-e-métricas-de-avaliação'>3.3. Validação Cruzada e Métricas de Avaliação
-    - <a href='#34-comparação-de-modelos-e-resultados'>3.4. Comparação de modelos e resultados
-- <a href='#sobre-mim'>4. Sobre mim</a> 
+- <a href='#contexto'>1. Contexto</a>
+- <a href='#tecnologias'>2. Tecnologias</a>
+- <a href='#análise-exploratória'>3. Análise Exploratória</a>
+- <a href='#modelagem'>4. Modelagem
+    - <a href='#regressão-logística-logistic-regression'>4.1. Regressão Logística (Logistic Regression)
+    - <a href='#árvore-de-decisão-decision-tree'>4.2. Árvore de Decisão (Decision Tree)
+    - <a href='#máquinas-suportadas-por-vetores-support-vector-machine---svm'>4.3. Máquinas Suportadas por Vetores (Support Vector Machine - SVM)
+- <a href='#métricas-de-validação'>5. Métricas de validação
+    - <a href='#validação-cruzada-k-fold'>5.1. Validação Cruzada (K-Fold)
+    - <a href='#acurácia'>5.2. Acurácia
+    - <a href='#precisão'>5.3. Precisão
+    - <a href='#recall-sensibilidade'>5.4. Recall (Sensibilidade)
+    - <a href='#f1-score'>5.5. F1-Score
+    - <a href='#auc-roc-área-sob-a-curva-roc'>5.6. AUC-ROC (Área sob a Curva ROC)
+- <a href='#comparação-entre-os-modelos'>6. Comparação entre os modelos
+- <a href='#conclusões-gerais'>7. Conclusões gerais</a>
+- <a href='#sobre-mim'>8. Sobre mim</a> 
 
-## Tecnologias
-
-<img style='width:30px; vertical-align: middle; margin-right: 10px' src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/anaconda/anaconda-original.svg' alt='Anaconda logo'> Anaconda v. 23.7.4
-
-<img style='width:30px; vertical-align: middle; margin-right: 10px;' src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg' alt='Jupyter logo'> Jupyter Notebook v. 5.7.2
-
-<img style='width:30px; vertical-align: middle; margin-right: 10px' src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg' alt='Python logo'> Python v. 3.12.4
-
-<img style='width:30px; vertical-align: middle; margin-right: 10px' src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg' alt='Python logo'> Scikit-learn
 
 ## Contexto
 
@@ -41,9 +41,31 @@ A base contém diversas variáveis relacionadas à composição química dos vin
 
 O foco do estudo foi determinar a eficiência de diferentes modelos na classificação de vinhos com base nesses atributos, considerando métricas como F1-score e AUC-ROC.
 
-## Análises
 
-### 3.1. Exploração dos Dados
+## Tecnologias
+
+<img style='width:30px; vertical-align: middle; margin-right: 10px' src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/anaconda/anaconda-original.svg' alt='Anaconda logo'> Anaconda v. 23.7.4
+
+<img style='width:30px; vertical-align: middle; margin-right: 10px;' src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg' alt='Jupyter logo'> Jupyter Notebook v. 5.7.2
+
+<img style='width:30px; vertical-align: middle; margin-right: 10px' src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg' alt='Python logo'> Python v. 3.12.4
+
+Principais bibliotecas:
+
+- <img style='width:30px; vertical-align: middle; margin-right: 10px' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" alt='matplotlib_logo'> Matplotlib
+
+- <img style='width:30px; vertical-align: middle; margin-right: 10px' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" alt='numpy_logo'> Numpy
+
+- <img style='width:30px; vertical-align: middle; margin-right: 10px' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt='pandas_logo'> Pandas
+
+- <img style='width:30px; vertical-align: middle; margin-right: 10px' src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg' alt='scikit-learn_logo'> Scikit-learn
+
+- <img style='width:30px; vertical-align: middle; margin-right: 10px' src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt='seaborn_logo'> Seaborn
+
+
+## Análise Exploratória
+
+⬆️ <a href='#índice'>Voltar ao início</a>
 
 A análise exploratória revelou informações importantes sobre a base de dados. O conjunto de dados contém vinhos tintos e brancos e apresenta diversas variáveis físico-químicas, como acidez, teor alcoólico, nível de açúcar residual, pH e concentração de dióxido de enxofre. A variável original de qualidade (quality) foi convertida em uma variável categórica chamada opinion, onde vinhos com nota menor ou igual a 5 foram classificados como ruins (0) e os demais como bons (1).
 
@@ -51,83 +73,131 @@ Durante a análise, foram identificados valores nulos em sete colunas, além de 
 
 O balanceamento dos dados também foi analisado, revelando que os vinhos brancos são mais desbalanceados (com predominância de vinhos de baixa qualidade), enquanto os vinhos tintos possuem uma distribuição mais equilibrada entre vinhos bons e ruins.
 
-### 3.2. Modelagem
+### Modelagem
+
+⬆️ <a href='#índice'>Voltar ao início</a>
 
 Para a classificação dos vinhos, foram testados três modelos de machine learning: Regressão Logística, Árvore de Decisão e Support Vector Machine (SVM).
 
-#### Regressão Logística (Logistic Regression)
+### Regressão Logística (Logistic Regression)
 
 A Regressão Logística é um modelo estatístico usado para problemas de classificação binária. Ele estima a probabilidade de uma amostra pertencer a uma classe específica usando uma função sigmoide. Esse modelo é eficiente, rápido e fornece probabilidades bem calibradas, o que facilita a interpretação dos resultados.
 
 No experimento, a Regressão Logística foi treinada com validação cruzada estratificada usando K-Fold (k=10). Além disso, foram testados diferentes hiperparâmetros, utilizando o Grid Search para encontrar a melhor configuração do modelo.
 
-#### Árvore de Decisão (Decision Tree)
+### Árvore de Decisão (Decision Tree)
 
 A Árvore de Decisão é um modelo baseado em regras de decisão hierárquicas, onde os dados são divididos de forma sucessiva com base em critérios como gini ou entropia. Esse modelo é altamente interpretável, mas pode sofrer de overfitting se não for corretamente ajustado.
 
 Para melhorar o desempenho da Árvore de Decisão, foram testados hiperparâmetros como profundidade máxima, número mínimo de amostras por folha e critério de divisão. O ajuste foi feito utilizando Grid Search com validação cruzada K-Fold (k=10).
 
-#### Máquinas Suportadas por Vetores (Support Vector Machine - SVM)
+### Máquinas Suportadas por Vetores (Support Vector Machine - SVM)
 
 O modelo SVM busca encontrar um hiperplano de separação ótimo entre as classes, maximizando a margem entre os dados. Quando os dados não são linearmente separáveis, o SVM utiliza funções kernel (como RBF e polinomial) para mapear os dados para um espaço dimensional maior, onde a separação seja possível.
 
 A SVM geralmente é um modelo mais computacionalmente custoso, especialmente em grandes volumes de dados. Para otimizar seu desempenho, foram ajustados hiperparâmetros como tipo de kernel, parâmetro C (penalização) e gamma, utilizando Grid Search com validação cruzada K-Fold (k=10).
 
-### 3.3. Validação Cruzada (K-Fold) e Métricas de Avaliação
+## Métricas de Validação
 
-A validação cruzada estratificada (Stratified K-Fold) foi aplicada com k=10, garantindo que a distribuição das classes fosse mantida em todas as divisões do conjunto de treino e teste. Essa técnica permite avaliar o desempenho do modelo de forma mais confiável, reduzindo a influência de uma divisão específica dos dados.
+⬆️ <a href='#índice'>Voltar ao início</a>
 
 Para avaliar o desempenho dos modelos de classificação, foram utilizadas cinco métricas principais: acurácia, precisão, recall, F1-score e AUC-ROC. Cada uma dessas métricas fornece uma visão diferente sobre a performance dos modelos, permitindo uma análise mais completa, especialmente considerando o desbalanceamento da base de dados.
 
-- **Acurácia**: Mede a proporção de classificações corretas em relação ao total de amostras. Embora seja uma métrica amplamente utilizada, pode ser enganosa em bases desbalanceadas, pois um modelo pode ter alta acurácia apenas por favorecer a classe majoritária.
+### Validação Cruzada (K-Fold)
 
-- **Precisão**: Mede a proporção de predições positivas que realmente pertencem à classe positiva. É útil em cenários onde falsos positivos devem ser minimizados, garantindo que apenas os vinhos corretamente classificados como "bons" sejam considerados.
+A validação cruzada estratificada (Stratified K-Fold) foi aplicada com k=10, garantindo que a distribuição das classes fosse mantida em todas as divisões do conjunto de treino e teste. Essa técnica permite avaliar o desempenho do modelo de forma mais confiável, reduzindo a influência de uma divisão específica dos dados.
 
-- **Recall (Sensibilidade)**: Mede a capacidade do modelo de identificar corretamente os casos positivos dentro de todas as ocorrências reais da classe positiva. É uma métrica importante quando a prioridade é minimizar falsos negativos.
+### Acurácia
 
-- **F1-score**: Representa a média harmônica entre precisão e recall, equilibrando ambos os aspectos. Como a base de dados é desbalanceada, essa métrica foi priorizada na comparação dos modelos, pois considera tanto os verdadeiros positivos corretamente identificados quanto os erros de classificação.
+A acurácia mede a proporção total de classificações corretas feitas pelo modelo em relação ao total de observações. Ela é frequentemente usada como métrica principal em problemas de classificação, mas pode ser enganosa quando há desbalanceamento de classes. Isso ocorre porque um modelo pode parecer ter um bom desempenho apenas por favorecer a classe majoritária.
 
-- **AUC-ROC (Área Sob a Curva ROC)**: Avalia a capacidade do modelo de distinguir entre as classes positiva e negativa. A curva ROC compara a taxa de verdadeiros positivos (sensibilidade) com a taxa de falsos positivos, permitindo visualizar o desempenho do modelo independentemente do limiar de decisão. Quanto mais próximo de 1, melhor a separação entre as classes.
+A acurácia foi calculada para cada modelo, servindo como uma métrica geral de desempenho. No entanto, devido ao desbalanceamento dos dados, ela não foi usada isoladamente para escolher o melhor modelo.
 
-<img style='width:500px' src='./assets/roc_curve.png' alt='ROC curve'>
+### Precisão
 
-Essas métricas foram analisadas em conjunto para garantir que os modelos escolhidos apresentassem um bom equilíbrio entre eficiência na classificação, minimização de erros e generalização.
+A precisão (precision) mede a proporção de previsões positivas que realmente pertencem à classe positiva. Em outras palavras, indica quantos dos vinhos classificados como "bons" realmente possuem alta qualidade. Essa métrica é essencial em cenários onde falsos positivos podem ser problemáticos, ou seja, quando um erro pode levar a decisões equivocadas, como recomendar um vinho de baixa qualidade como se fosse premium.
 
-### 3.4. Comparação de Modelos e Resultados
+No projeto, a precisão foi usada para avaliar se os modelos estavam classificando corretamente os vinhos de qualidade superior. Como a base de dados era desbalanceada, um modelo com alta precisão pode indicar que ele é conservador e evita atribuir rótulos positivos quando há incerteza.
 
-Como a base de dados era desbalanceada, o F1-score foi escolhido como métrica principal para avaliar o desempenho dos modelos.
+### Recall (Sensibilidade)
 
-A Regressão Logística apresentou os melhores resultados, com um F1-score médio de 63,77% no treino e 64,63% no teste, além de uma AUC-ROC de 80,30%. Seu desempenho consistente torna esse modelo a melhor escolha para uma eventual operação de classificação de vinhos.
+O recall (ou sensibilidade) mede a proporção de amostras realmente positivas que foram corretamente classificadas pelo modelo. Ele indica a capacidade do modelo de identificar corretamente todos os vinhos de qualidade superior. Essa métrica é especialmente importante quando o objetivo é minimizar falsos negativos, ou seja, evitar que vinhos bons sejam classificados erroneamente como ruins.
+
+O recall foi essencial para garantir que vinhos de boa qualidade não fossem subestimados pelo modelo. Como havia um desbalanceamento na base de dados, o recall ajudou a verificar se os modelos estavam conseguindo detectar corretamente a minoria dos vinhos classificados como bons.
+
+### F1-score
+
+O F1-score é a média harmônica entre a precisão e o recall, fornecendo um equilíbrio entre essas duas métricas. Ele é especialmente útil quando há um trade-off entre minimizar falsos positivos e falsos negativos. Um F1-score alto indica que o modelo tem um bom desempenho tanto na identificação dos vinhos bons quanto na redução de erros na classificação.
+
+Como a base de dados era desbalanceada, o F1-score foi escolhido como a métrica principal para comparar os modelos. Ele ajudou a encontrar o modelo que conseguia equilibrar bem a classificação correta dos vinhos bons sem comprometer a precisão ou o recall.
+
+### AUC-ROC (Área Sob a Curva ROC)
+
+A métrica AUC-ROC (Área Sob a Curva ROC) mede a capacidade do modelo de distinguir entre as classes positiva e negativa. A curva ROC (Receiver Operating Characteristic) compara a taxa de verdadeiros positivos (sensibilidade) com a taxa de falsos positivos. O valor do AUC (Área sob a curva) varia de 0 a 1, onde 1 representa um modelo perfeito e 0.5 indica um modelo aleatório.
+
+A AUC-ROC foi usada para avaliar quão bem os modelos diferenciavam os vinhos bons dos ruins. Um modelo com AUC próximo de 1 indicava uma separação clara entre as classes, enquanto valores mais baixos mostravam dificuldades na classificação. Essa métrica foi útil para entender a performance global do modelo independentemente do limiar de decisão.
+
+<p align="center"> <img style='max-width:500px;' src='./assets/roc_curve.png' alt='ROC curve'> </p>
+
+## Comparação entre os Modelos
+
+⬆️ <a href='#índice'>Voltar ao início</a>
+
+A Regressão Logística apresentou os melhores resultados gerais, com um F1-score de 63,77% no treino e 64,63% no teste, além de uma AUC-ROC de 80,30%. Seu desempenho consistente, aliado à interpretabilidade e eficiência computacional, faz dela uma opção robusta para classificação de vinhos.
+
+A Árvore de Decisão teve um F1-score de 60,12% no treino e 58,79% no teste, mostrando boa capacidade de aprendizado, mas com tendência ao overfitting. Ajustes nos hiperparâmetros ajudaram a melhorar sua generalização, tornando-a uma alternativa viável para aplicações explicáveis.
+
+O Support Vector Machine (SVM) obteve o melhor desempenho em separabilidade das classes, com F1-score de 66,45% no treino e 65,98% no teste, além da maior AUC-ROC (83,75%). No entanto, o alto custo computacional e a necessidade de ajuste fino dos hiperparâmetros podem limitar sua aplicação prática.
+
+A escolha do modelo depende do contexto. A Regressão Logística é a melhor opção para um equilíbrio entre desempenho e simplicidade. A SVM se destaca pela alta precisão, enquanto a Árvore de Decisão oferece interpretabilidade, mas exige otimização para evitar overfitting.
+
+
+## Conclusões Gerais
+
+⬆️ <a href='#índice'>Voltar ao início</a>
+
+Os resultados da modelagem demonstraram que diferentes modelos podem oferecer vantagens distintas dependendo do critério avaliado. Além disso, a análise dos dados reforçou a importância do tratamento de dados ausentes e do balanceamento das classes, fatores que podem impactar diretamente na qualidade da classificação.
+
+Foi possível identificar que os vinhos classificados como bons (opinion = 1) tendem a apresentar maior teor alcoólico e menor acidez volátil, enquanto os vinhos considerados ruins (opinion = 0) apresentam características opostas. Isso sugere que a composição química do vinho tem influência direta na percepção de qualidade.
+
+Em aplicações reais, o modelo escolhido deve levar em conta não apenas as métricas de desempenho, mas também a interpretabilidade e a aplicabilidade no contexto do problema. Em um ambiente comercial, por exemplo, um modelo mais explicável pode ser preferível a um modelo mais complexo que exige maior esforço computacional e dificulta a justificativa das decisões.
+
+Por fim, o projeto permitiu um aprofundamento prático nos conceitos de classificação supervisionada, destacando a importância da escolha das métricas adequadas e das técnicas de validação para garantir modelos robustos e eficazes. 
+
 
 ## Sobre mim
+
+⬆️ <a href='#índice'>Voltar ao início</a>
 
 <div style="display: flex; align-items: center;">
     <img src="https://avatars.githubusercontent.com/u/156105588?v=4" alt="Minha foto" style="width:150px; border-radius: 50%; margin-right: 15px;">
     <div>
         <div style="font-size: 16px; font-weight: bold">Mateus Teixeira</div>
+        Cientista de dados
+        <br>
         Pós-graduando em Inteligência Artifcial pela INFNET
         <br>
         <br>
         <a href="mailto:pessoal.mtr@gmail.com"
         target="_blank">
             <img 
-            src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" 
+            src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&labelColor=555&logoColor=white" 
             alt="E-mail" 
-            style='height: 25px; margin-right: 10px; border-radius: 5px;'>
+            height='25'/>
         </a>
         <a href="https://www.linkedin.com/in/mateusteixeira/" 
         target="_blank">
             <img 
-            src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjMDA3NmIyIiBkPSJNMTE2IDNIMTJhOC45MSA4LjkxIDAgMDAtOSA4Ljh2MTA0LjQyYTguOTEgOC45MSAwIDAwOSA4Ljc4aDEwNGE4LjkzIDguOTMgMCAwMDktOC44MVYxMS43N0E4LjkzIDguOTMgMCAwMDExNiAzeiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0yMS4wNiA0OC43M2gxOC4xMVYxMDdIMjEuMDZ6bTkuMDYtMjlhMTAuNSAxMC41IDAgMTEtMTAuNSAxMC40OSAxMC41IDEwLjUgMCAwMTEwLjUtMTAuNDlNNTAuNTMgNDguNzNoMTcuMzZ2OGguMjRjMi40Mi00LjU4IDguMzItOS40MSAxNy4xMy05LjQxQzEwMy42IDQ3LjI4IDEwNyA1OS4zNSAxMDcgNzV2MzJIODguODlWNzguNjVjMC02Ljc1LS4xMi0xNS40NC05LjQxLTE1LjQ0cy0xMC44NyA3LjM2LTEwLjg3IDE1VjEwN0g1MC41M3oiLz48L3N2Zz4=" 
+            src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&labelColor=555&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNklEQVR4nO3XSUoDQRgG0NrFTRyiuBA8lARvIujanROKnigICh5AVASHkDPECZ60yULFVDqamEqoB73rGj6q6q/uELIsmz6o4QgPeEUTx1gMEzL5Kz+7xnxIGQ7F7YWU6WybmNuQMrz0CfAcUobHPgHuQ8p0qk/MfpiAKnTTY/KXyVehApZw0q3/xT1whwMsfLyQZVNMCcNohxVsoNEt3U9o4RRbWE0yACrYLnFhtrGLmWQCYA4XBnOO5VQCnA04+c/tKikE+IudSQ/QLnWwEw5Q2EwhQFEy66h2n7XIH+B3jXEHKCZf6/EB2SzRvjXuAPXIuOsl2r+NO0A1Mu7sb8f+twCjGvuLHCAi9GEIfeQViMkrIG+hjlEdQEPoIx/imLwC8hbqyIe4ByWEUXWSTIAsy8JEeQd/X93eUJrQcwAAAABJRU5ErkJggg==" 
             alt="LinkedIn" 
-            style='height: 25px; margin-right: 10px; border-radius: 5px;'>
+             height='25'/>
         </a>
         <a href="https://www.instagram.com/omateusteixeira" 
         target="_blank">
             <img 
-            src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" 
+            src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&labelColor=555&logoColor=white" 
             alt="Instagram" 
-            style='height: 25px; border-radius: 5px;'>
+             height='25'/>
         </a>
     </div>
 </div>
