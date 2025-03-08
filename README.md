@@ -1,4 +1,4 @@
-# <img style='width:60px' src='./assets/logo_infnetv1.png' alt='infnet_logo'> Repositório de Machine Learning - Infnet
+# <img src='./assets/logo_infnetv1.png' alt='infnet_logo' style='width: 60px; vertical-align: middle; margin-right: 5px;'> Repositório de Machine Learning - Infnet
 
 Este repositório contém projetos e modelos desenvolvidos ao longo do curso de Inteligência Artificial, Machine Learning e Deep Learning oferecido pelo INFNET, com metodologia do MIT.
 
@@ -158,9 +158,12 @@ Alguns dos principais aprendizados foram:
 ⬆️ <a href='#índice'>Voltar ao início</a>
 
 <div style="display: flex; align-items: center;">
-    <img src="https://avatars.githubusercontent.com/u/156105588?v=4" alt="Minha foto" style="width:150px; border-radius: 50%; margin-right: 15px;">
+    <img src="https://avatars.githubusercontent.com/u/156105588?v=4" alt="Minha foto" align='left' style="width:150px; border-radius: 50%; margin-right: 15px;">
     <div>
-        <div style="font-size: 16px; font-weight: bold">Mateus Teixeira</div>
+        <div>
+            <img src="./assets/logo_mt_white.png" alt="mt_logo" style='width: 80px; vertical-align: middle;' align='left'>
+            <span style="">Mateus Teixeira</span>
+        </div>
         Cientista de dados
         <br>
         Pós-graduando em Inteligência Artifcial pela INFNET
