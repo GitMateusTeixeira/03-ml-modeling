@@ -1,8 +1,11 @@
 # Projeto de Disciplina de Algoritmos de Inteligência Artificial para Classificação
 
-<img style='width:350px' src='./assets/logo_infnetv2.png' alt='Infnet logo'>
-
+<img style='width:350px' src='./assets/logo_infnetv2.png' alt='Infnet logo' align='left'>
+<br>
 Este projeto faz parte da disciplina de Algoritmos de Inteligência Artificial para Classificação e tem como objetivo aplicar técnicas de aprendizado supervisionado para a classificação da qualidade de vinhos com base em suas características físico-químicas.
+<br>
+<br>
+<br>
 
 ## Índice
 
@@ -170,9 +173,12 @@ Por fim, o projeto permitiu um aprofundamento prático nos conceitos de classifi
 ⬆️ <a href='#índice'>Voltar ao início</a>
 
 <div style="display: flex; align-items: center;">
-    <img src="https://avatars.githubusercontent.com/u/156105588?v=4" alt="Minha foto" style="width:150px; border-radius: 50%; margin-right: 15px;">
+    <img src="https://avatars.githubusercontent.com/u/156105588?v=4" alt="Minha foto" align='left' style="width:150px; border-radius: 50%; margin-right: 15px;">
     <div>
-        <div style="font-size: 16px; font-weight: bold">Mateus Teixeira</div>
+        <div>
+            <img src="./assets/logo_mt_ds.png" alt="mt_logo" style='width: 80px; vertical-align: middle;' align='left'>
+            <span style="">Mateus Teixeira</span>
+        </div>
         Cientista de dados
         <br>
         Pós-graduando em Inteligência Artifcial pela INFNET
