@@ -1,8 +1,11 @@
 # Projeto de Disciplina de Validação de Modelos de Clusterização
 
-<img style='width:350px' src='./assets/logo_infnetv2.png' alt='Infnet logo'>
-
+<img style='width:350px' src='./assets/logo_infnetv2.png' alt='Infnet logo' align='left'>
+<br>
 Projeto desenvolvido para validar a segmentação de dados realizada por modelos de aprendizado não supervisionado. A validação é um passo fundamental para garantir que os grupos formados possuam significado e aplicabilidade prática.
+<br>
+<br>
+<br>
 
 ## Índice
 
@@ -178,9 +181,12 @@ Essa análise permite utilizar os clusters para diferentes estratégias bancári
 ⬆️ <a href='#índice'>Voltar ao início</a>
 
 <div style="display: flex; align-items: center;">
-    <img src="https://avatars.githubusercontent.com/u/156105588?v=4" alt="Minha foto" style="width:150px; border-radius: 50%; margin-right: 15px;">
+    <img src="https://avatars.githubusercontent.com/u/156105588?v=4" alt="Minha foto" align='left' style="width:150px; border-radius: 50%; margin-right: 15px;">
     <div>
-        <div style="font-size: 16px; font-weight: bold">Mateus Teixeira</div>
+        <div>
+            <img src="./assets/logo_mt_ds.png" alt="mt_logo" style='width: 80px; vertical-align: middle;' align='left'>
+            <span style="">Mateus Teixeira</span>
+        </div>
         Cientista de dados
         <br>
         Pós-graduando em Inteligência Artifcial pela INFNET
