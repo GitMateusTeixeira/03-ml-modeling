@@ -30,7 +30,7 @@ Durante o desenvolvimento, aprofundei meus conhecimentos sobre a implementação
 
 ⬆️ <a href='#índice'>Voltar ao início</a>
 
-O objetivo deste projeto foi explorar algoritmos de clusterização para analisar um conjunto de dados contendo informações econômicas e políticas sobre diversos países, disponível no arquivo '🌎 country-data.csv'.
+O objetivo deste projeto foi explorar algoritmos de clusterização para analisar um conjunto de dados contendo informações econômicas e políticas sobre diversos países, disponível no arquivo '🌎 <a href='./data/country-data.csv'>country-data.csv</a>'.
 
 A clusterização é uma técnica fundamental de aprendizado não supervisionado, pois permite identificar padrões ocultos e agrupar dados semelhantes sem a necessidade de rótulos prévios. Durante o desenvolvimento do projeto, foram testadas diferentes abordagens de agrupamento para avaliar sua eficiência e aplicabilidade ao conjunto de dados.
 
