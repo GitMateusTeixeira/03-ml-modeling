@@ -1,4 +1,4 @@
-# <img src='./assets/logo_infnetv1.png' alt='infnet_logo' style='width: 60px; vertical-align: middle; margin-right: 5px;'> Repositório de Machine Learning - Infnet
+# <img style='width:60px' src='./assets/logo_infnetv1.png' alt='infnet_logo'> Repositório de Machine Learning - Infnet
 
 Este repositório contém projetos e modelos desenvolvidos ao longo do curso de Inteligência Artificial, Machine Learning e Deep Learning oferecido pelo INFNET, com metodologia do MIT.
 
@@ -52,16 +52,16 @@ Principais bibliotecas:
 
 Atualmente, temos os seguintes módulos concluídos:
 
-➡️ <a href='https://github.com/GitMateusTeixeira/ml_models/tree/main/infnet_clustering_pd'>**infnet_clustering_pd**</a>: Algoritmos de Inteligência Artificial para Clusterização
+➡️ <a href='https://github.com/GitMateusTeixeira/03-ml-modeling/tree/main/01-infnet-clustering-pd'>**infnet_clustering_pd**</a>: Algoritmos de Inteligência Artificial para Clusterização
 
-➡️ <a href='https://github.com/GitMateusTeixeira/ml_models/tree/main/infnet_cluster_validation_pd'>**infnet_cluster_validation_pd**</a>: Validação de Modelos de Clusterização
+➡️ <a href='https://github.com/GitMateusTeixeira/03-ml-modeling/tree/main/02-infnet-cluster-validation-pd'>**infnet_cluster_validation_pd**</a>: Validação de Modelos de Clusterização
 
-➡️ <a href='https://github.com/GitMateusTeixeira/ml_models/tree/main/infnet_classification_pd'>**infnet_classification_pd**</a>: Algoritmos de Inteligência Artificial para Classificação
+➡️ <a href='https://github.com/GitMateusTeixeira/03-ml-modeling/tree/main/03-infnet-classification-pd'>**infnet_classification_pd**</a>: Algoritmos de Inteligência Artificial para Classificação
 <br><br>
 
 ## Trilha de aprendizado
 
-### 🟦 <a href='https://github.com/GitMateusTeixeira/ml_models/tree/main/infnet_clustering_pd'>Algoritmos de Inteligência Artificial para Clusterização</a>
+### 🟦 <a href='https://github.com/GitMateusTeixeira/03-ml-modeling/tree/main/01-infnet-clustering-pd'>Algoritmos de Inteligência Artificial para Clusterização</a>
 
 ⬆️ <a href='#índice'>Voltar ao início</a>
 
@@ -81,10 +81,10 @@ Pontos que aprendi:
 
 - **Comparação de modelos**: Comparei e identifiquei as diferenças entre os métodos de clusterização
 
-➡️ <a href='https://github.com/GitMateusTeixeira/ml_models/tree/main/infnet_clustering_pd'>Saiba mais</a>
+➡️ <a href='https://github.com/GitMateusTeixeira/03-ml-modeling/tree/main/01-infnet-clustering-pd'>Saiba mais</a>
 <br><br>
 
-### 🟦 <a href='https://github.com/GitMateusTeixeira/ml_models/tree/main/infnet_cluster_validation_pd'>Validação de Modelos de Clusterização</a>
+### 🟦 <a href='https://github.com/GitMateusTeixeira/03-ml-modeling/tree/main/02-infnet-cluster-validation-pd'>Validação de Modelos de Clusterização</a>
 
 ⬆️ <a href='#índice'>Voltar ao início</a>
 
@@ -100,10 +100,10 @@ Os principais pontos que aprendi foram:
 
 - **Clusterização de Séries Temporais**: Utilização de métodos como Correlação Cruzada e DTW (Dynamic Time Warping) para medir similaridade entre séries temporais.
 
-➡️ <a href='https://github.com/GitMateusTeixeira/ml_models/tree/main/infnet_cluster_validation_pd'>Saiba mais</a>
+➡️ <a href='https://github.com/GitMateusTeixeira/03-ml-modeling/tree/main/02-infnet-cluster-validation-pd'>Saiba mais</a>
 <br><br>
 
-### 🟦 <a href='https://github.com/GitMateusTeixeira/ml_models/tree/main/infnet_classification_pd'>Algoritmos de Inteligência Artificial para Classificação</a>
+### 🟦 <a href='https://github.com/GitMateusTeixeira/03-ml-modeling/tree/main/03-infnet-classification-pd'>Algoritmos de Inteligência Artificial para Classificação</a>
 
 ⬆️ <a href='#índice'>Voltar ao início</a>
 
@@ -137,7 +137,7 @@ Alguns dos principais aprendizados foram:
 
 - **Curva ROC e AUC**: Comparação do desempenho dos modelos através da análise da taxa de verdadeiros e falsos positivos. Identifiquei que a Regressão Logística teve melhor performance na classificação dos vinhos.
 
-➡️ <a href='https://github.com/GitMateusTeixeira/ml_models/tree/main/infnet_classification_pd'>Saiba mais</a>
+➡️ <a href='https://github.com/GitMateusTeixeira/03-ml-modeling/tree/main/03-infnet-classification-pd'>Saiba mais</a>
 <br><br>
 
 ### ⬜ Engenharia de Machine Learning
