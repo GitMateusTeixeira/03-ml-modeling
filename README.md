@@ -4,6 +4,10 @@ Este repositório contém projetos e modelos desenvolvidos ao longo do curso de 
 
 Aqui, organizei os códigos e materiais das disciplinas concluídas, e o repositório será atualizado conforme avanço no curso.
 
+<p align='center'><img style='height:90px' src='./assets/road_map_4.png' alt='road_map'></p>
+Os projetos deste repositório estão na fase de modelagem, onde diferentes algoritmos de machine learning são testados, ajustados e avaliados para encontrar a melhor solução para cada problema. Essa etapa é essencial para transformar dados brutos em previsões e classificações confiáveis, garantindo modelos eficientes e bem ajustados.
+<br><br>
+
 ## Índice
 
 - <a href='#tecnologias'>1. Tecnologias</a>
@@ -14,6 +18,7 @@ Aqui, organizei os códigos e materiais das disciplinas concluídas, e o reposit
     - <a href='#-validação-de-modelos-de-clusterização'>4.2. Validação de Modelos de Clusterização</a>
     - <a href='#-algoritmos-de-inteligência-artificial-para-classificação'>4.3. Algoritmos de Inteligência Artificial para Classificação</a>
 - <a href='#sobre-mim'>5. Sobre mim</a> 
+<br><br>
 
 ## Tecnologias
 
@@ -36,10 +41,12 @@ Principais bibliotecas:
 - <img style='width:30px; vertical-align: middle; margin-right: 10px' src="https://scipy.org/images/logo.svg" alt='scipy_logo'> Scipy
 
 - <img style='width:30px; vertical-align: middle; margin-right: 10px' src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt='seaborn_logo'> Seaborn
+<br><br>
 
 ## Progresso do curso
 
 🟦🟦🟦⬜⬜⬜⬜⬜ (3 de 8 matérias concluídas)
+<br><br>
 
 ## Estrutura do repositório
 
@@ -50,6 +57,7 @@ Atualmente, temos os seguintes módulos concluídos:
 ➡️ <a href='https://github.com/GitMateusTeixeira/ml_models/tree/main/infnet_cluster_validation_pd'>**infnet_cluster_validation_pd**</a>: Validação de Modelos de Clusterização
 
 ➡️ <a href='https://github.com/GitMateusTeixeira/ml_models/tree/main/infnet_classification_pd'>**infnet_classification_pd**</a>: Algoritmos de Inteligência Artificial para Classificação
+<br><br>
 
 ## Trilha de aprendizado
 
@@ -74,8 +82,8 @@ Pontos que aprendi:
 - **Comparação de modelos**: Comparei e identifiquei as diferenças entre os métodos de clusterização
 
 ➡️ <a href='https://github.com/GitMateusTeixeira/ml_models/tree/main/infnet_clustering_pd'>Saiba mais</a>
-<br>
-<br>
+<br><br>
+
 ### 🟦 <a href='https://github.com/GitMateusTeixeira/ml_models/tree/main/infnet_cluster_validation_pd'>Validação de Modelos de Clusterização</a>
 
 ⬆️ <a href='#índice'>Voltar ao início</a>
@@ -93,8 +101,8 @@ Os principais pontos que aprendi foram:
 - **Clusterização de Séries Temporais**: Utilização de métodos como Correlação Cruzada e DTW (Dynamic Time Warping) para medir similaridade entre séries temporais.
 
 ➡️ <a href='https://github.com/GitMateusTeixeira/ml_models/tree/main/infnet_cluster_validation_pd'>Saiba mais</a>
-<br>
-<br>
+<br><br>
+
 ### 🟦 <a href='https://github.com/GitMateusTeixeira/ml_models/tree/main/infnet_classification_pd'>Algoritmos de Inteligência Artificial para Classificação</a>
 
 ⬆️ <a href='#índice'>Voltar ao início</a>
@@ -130,8 +138,7 @@ Alguns dos principais aprendizados foram:
 - **Curva ROC e AUC**: Comparação do desempenho dos modelos através da análise da taxa de verdadeiros e falsos positivos. Identifiquei que a Regressão Logística teve melhor performance na classificação dos vinhos.
 
 ➡️ <a href='https://github.com/GitMateusTeixeira/ml_models/tree/main/infnet_classification_pd'>Saiba mais</a>
-<br>
-<br>
+<br><br>
 
 ### ⬜ Engenharia de Machine Learning
 
@@ -152,6 +159,7 @@ Alguns dos principais aprendizados foram:
 ### ⬜ Deep Learning
 
 🔁 Em andamento.
+<br><br>
 
 ## Sobre mim
 
