@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/9e7c4d1485d546ecaef9cc91e8dbf338/artifacts
+deleted_time: 1744485530122
+end_time: 1744485300459
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: deleted
+run_id: 9e7c4d1485d546ecaef9cc91e8dbf338
+run_name: mysterious-mouse-870
+run_uuid: 9e7c4d1485d546ecaef9cc91e8dbf338
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744485300349
+status: 3
+tags: []
+user_id: pesso

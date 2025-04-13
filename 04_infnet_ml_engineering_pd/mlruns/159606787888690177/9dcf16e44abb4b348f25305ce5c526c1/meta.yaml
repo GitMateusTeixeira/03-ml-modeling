@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/9dcf16e44abb4b348f25305ce5c526c1/artifacts
+end_time: 1744485674316
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: active
+run_id: 9dcf16e44abb4b348f25305ce5c526c1
+run_name: learned-shrew-510
+run_uuid: 9dcf16e44abb4b348f25305ce5c526c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744485674042
+status: 3
+tags: []
+user_id: pesso

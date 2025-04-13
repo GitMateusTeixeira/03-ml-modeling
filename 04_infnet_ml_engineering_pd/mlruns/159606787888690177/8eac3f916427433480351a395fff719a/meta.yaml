@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/8eac3f916427433480351a395fff719a/artifacts
+end_time: 1744544619643
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: active
+run_id: 8eac3f916427433480351a395fff719a
+run_name: orderly-crab-443
+run_uuid: 8eac3f916427433480351a395fff719a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744544619481
+status: 3
+tags: []
+user_id: pesso
