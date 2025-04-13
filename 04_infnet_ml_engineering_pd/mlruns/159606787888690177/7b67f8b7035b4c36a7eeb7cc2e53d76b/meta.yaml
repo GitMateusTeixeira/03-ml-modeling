@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/7b67f8b7035b4c36a7eeb7cc2e53d76b/artifacts
+end_time: 1744555072582
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: active
+run_id: 7b67f8b7035b4c36a7eeb7cc2e53d76b
+run_name: melodic-shrew-204
+run_uuid: 7b67f8b7035b4c36a7eeb7cc2e53d76b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744555072462
+status: 3
+tags: []
+user_id: pesso
