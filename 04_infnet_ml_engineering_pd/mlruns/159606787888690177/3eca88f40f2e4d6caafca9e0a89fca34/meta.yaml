@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/3eca88f40f2e4d6caafca9e0a89fca34/artifacts
+end_time: 1744545650573
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: active
+run_id: 3eca88f40f2e4d6caafca9e0a89fca34
+run_name: rare-crab-852
+run_uuid: 3eca88f40f2e4d6caafca9e0a89fca34
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744545650210
+status: 3
+tags: []
+user_id: pesso

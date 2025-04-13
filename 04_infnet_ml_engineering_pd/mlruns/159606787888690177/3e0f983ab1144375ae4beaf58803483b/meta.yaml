@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/3e0f983ab1144375ae4beaf58803483b/artifacts
+end_time: 1744495909858
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: active
+run_id: 3e0f983ab1144375ae4beaf58803483b
+run_name: trainer
+run_uuid: 3e0f983ab1144375ae4beaf58803483b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744495909383
+status: 4
+tags: []
+user_id: pesso
