@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/5bed5734d91a4ae7a0f5d498d043e31a/artifacts
+end_time: 1744489850367
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: active
+run_id: 5bed5734d91a4ae7a0f5d498d043e31a
+run_name: receptive-crow-609
+run_uuid: 5bed5734d91a4ae7a0f5d498d043e31a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744489850068
+status: 3
+tags: []
+user_id: pesso
