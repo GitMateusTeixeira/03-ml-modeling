@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/0/dbd96885ed7b46f3badd8a97c862dfbc/artifacts
+end_time: 1744481085180
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dbd96885ed7b46f3badd8a97c862dfbc
+run_name: awesome-dog-309
+run_uuid: dbd96885ed7b46f3badd8a97c862dfbc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744481084849
+status: 3
+tags: []
+user_id: pesso

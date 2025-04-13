@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/0/d7125de905d54193ba8ff9dbf0db6e44/artifacts
+end_time: 1744478276683
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d7125de905d54193ba8ff9dbf0db6e44
+run_name: enthused-bear-428
+run_uuid: d7125de905d54193ba8ff9dbf0db6e44
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744478276606
+status: 3
+tags: []
+user_id: pesso

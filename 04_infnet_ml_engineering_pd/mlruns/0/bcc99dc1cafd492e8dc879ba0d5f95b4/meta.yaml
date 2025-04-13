@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/0/bcc99dc1cafd492e8dc879ba0d5f95b4/artifacts
+end_time: 1744478974138
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bcc99dc1cafd492e8dc879ba0d5f95b4
+run_name: stylish-trout-953
+run_uuid: bcc99dc1cafd492e8dc879ba0d5f95b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744478974073
+status: 4
+tags: []
+user_id: pesso

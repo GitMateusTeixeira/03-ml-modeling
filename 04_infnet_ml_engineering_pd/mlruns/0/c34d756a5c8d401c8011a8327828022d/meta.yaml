@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/0/c34d756a5c8d401c8011a8327828022d/artifacts
+end_time: 1744478973997
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c34d756a5c8d401c8011a8327828022d
+run_name: smiling-squid-603
+run_uuid: c34d756a5c8d401c8011a8327828022d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744478973939
+status: 4
+tags: []
+user_id: pesso

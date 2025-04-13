@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/0/1691412785904ce3bdb7e6c11586e907/artifacts
+end_time: 1744481084331
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1691412785904ce3bdb7e6c11586e907
+run_name: wise-frog-71
+run_uuid: 1691412785904ce3bdb7e6c11586e907
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744481084237
+status: 3
+tags: []
+user_id: pesso

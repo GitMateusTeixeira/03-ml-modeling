@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/0/72696031d3844b0e9a2fd9e52b998051/artifacts
+end_time: 1744478485291
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 72696031d3844b0e9a2fd9e52b998051
+run_name: rare-perch-961
+run_uuid: 72696031d3844b0e9a2fd9e52b998051
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744478485216
+status: 3
+tags: []
+user_id: pesso

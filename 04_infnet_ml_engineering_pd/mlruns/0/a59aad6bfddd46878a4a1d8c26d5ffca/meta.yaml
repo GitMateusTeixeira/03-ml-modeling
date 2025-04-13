@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/0/a59aad6bfddd46878a4a1d8c26d5ffca/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a59aad6bfddd46878a4a1d8c26d5ffca
+run_name: adaptable-finch-665
+run_uuid: a59aad6bfddd46878a4a1d8c26d5ffca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744480512166
+status: 1
+tags: []
+user_id: pesso

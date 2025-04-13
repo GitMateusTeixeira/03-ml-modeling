@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/0/0184051fb51342b5be271c08dc72edb0/artifacts
+end_time: 1744479296493
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0184051fb51342b5be271c08dc72edb0
+run_name: merciful-trout-648
+run_uuid: 0184051fb51342b5be271c08dc72edb0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744479296344
+status: 3
+tags: []
+user_id: pesso

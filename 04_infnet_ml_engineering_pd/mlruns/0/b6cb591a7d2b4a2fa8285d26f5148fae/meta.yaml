@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/0/b6cb591a7d2b4a2fa8285d26f5148fae/artifacts
+end_time: 1744479287981
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b6cb591a7d2b4a2fa8285d26f5148fae
+run_name: crawling-horse-587
+run_uuid: b6cb591a7d2b4a2fa8285d26f5148fae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744479287845
+status: 3
+tags: []
+user_id: pesso
