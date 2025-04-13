@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/1d6d91135cad4c2a841b516797d8aa66/artifacts
+end_time: 1744485502945
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: active
+run_id: 1d6d91135cad4c2a841b516797d8aa66
+run_name: defiant-horse-748
+run_uuid: 1d6d91135cad4c2a841b516797d8aa66
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744485502824
+status: 3
+tags: []
+user_id: pesso

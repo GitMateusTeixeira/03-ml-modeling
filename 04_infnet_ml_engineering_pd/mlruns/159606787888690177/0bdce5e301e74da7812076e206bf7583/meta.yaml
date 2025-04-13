@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/0bdce5e301e74da7812076e206bf7583/artifacts
+deleted_time: 1744485530112
+end_time: 1744485300690
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: deleted
+run_id: 0bdce5e301e74da7812076e206bf7583
+run_name: fun-bird-424
+run_uuid: 0bdce5e301e74da7812076e206bf7583
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744485300577
+status: 3
+tags: []
+user_id: pesso

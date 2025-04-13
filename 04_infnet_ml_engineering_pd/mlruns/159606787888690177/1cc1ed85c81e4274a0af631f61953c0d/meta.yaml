@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/1cc1ed85c81e4274a0af631f61953c0d/artifacts
+deleted_time: 1744485530130
+end_time: 1744485318093
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: deleted
+run_id: 1cc1ed85c81e4274a0af631f61953c0d
+run_name: redolent-cod-917
+run_uuid: 1cc1ed85c81e4274a0af631f61953c0d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744485317977
+status: 3
+tags: []
+user_id: pesso

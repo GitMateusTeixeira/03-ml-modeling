@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/02dba8384d8a444fb628b6752b211ffd/artifacts
+end_time: 1744566301714
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: active
+run_id: 02dba8384d8a444fb628b6752b211ffd
+run_name: zealous-ray-765
+run_uuid: 02dba8384d8a444fb628b6752b211ffd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744566301464
+status: 3
+tags: []
+user_id: pesso
