@@ -1,0 +1,4 @@
+experiment_id: "17"
+name: "infnet_04_ml_engineering_pd"
+artifact_location: "file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/17/artifacts"
+lifecycle_stage: "active"
