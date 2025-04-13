@@ -1,0 +1,16 @@
+get_data:
+  repo_url: "https://github.com/tciodaro/eng_ml/raw/main/data/"
+  files:
+    - "dataset_kobe_dev.parquet"
+    - "dataset_kobe_prod.parquet"
+
+# Parâmetros para o processamento de dados
+dev_file_name: "dataset_kobe_dev.parquet"     # Nome do arquivo de desenvolvimento
+prod_file_name: "dataset_kobe_prod.parquet"   # Nome do arquivo de produção
+dev_suffix: "dev"                             # Sufixo para diferenciar dados de desenvolvimento
+prod_suffix: "prod"                           # Sufixo para diferenciar dados de produção
+
+# Parâmetros para modelagem
+random_state: 17                              # Controle de aleatoriedade para reprodutibilidade
+max_iter: 1000                                # Máximo de iterações para Logistic Regression
+test_size: 0.2                                # Proporção dos dados de teste (treinamento)

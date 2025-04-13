@@ -1,0 +1,49 @@
+dataset_kobe_dev:
+  type: kedro_datasets.pandas.ParquetDataset
+  filepath: data/01_raw/dataset_kobe_dev.parquet
+
+dataset_kobe_prod:
+  type: kedro_datasets.pandas.ParquetDataset
+  filepath: data/01_raw/dataset_kobe_prod.parquet
+
+data_filtered_dev:
+  type: kedro_datasets.pandas.ParquetDataset
+  filepath: data/02_intermediate/data_filtered_dev.parquet
+
+data_filtered_prod:
+  type: kedro_datasets.pandas.ParquetDataset
+  filepath: data/02_intermediate/data_filtered_prod.parquet
+
+x_features_dev:
+  type: kedro_datasets.pandas.ParquetDataset
+  filepath: data/04_feature/x_features_dev.parquet
+
+y_features_dev:
+  type: kedro_datasets.pandas.ParquetDataset
+  filepath: data/04_feature/y_features_dev.parquet
+
+x_features_prod:
+  type: kedro_datasets.pandas.ParquetDataset
+  filepath: data/04_feature/x_features_prod.parquet
+
+y_features_prod:
+  type: kedro_datasets.pandas.ParquetDataset
+  filepath: data/04_feature/y_features_prod.parquet
+
+X_train:
+  type: kedro_datasets.pandas.ParquetDataset
+  filepath: data/05_model_input/model_input_x_train.parquet
+
+y_train:
+  type: kedro_datasets.pandas.ParquetDataset
+  filepath: data/05_model_input/model_input_y_train.parquet
+
+X_test:
+  type: kedro_datasets.pandas.ParquetDataset
+  filepath: data/05_model_input/model_input_x_test.parquet
+
+y_test:
+  type: kedro_datasets.pandas.ParquetDataset
+  filepath: data/05_model_input/model_input_y_test.parquet
+
+# A segunda pipeline está rodando
