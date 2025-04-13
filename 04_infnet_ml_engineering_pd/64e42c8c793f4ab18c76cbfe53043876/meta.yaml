@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/64e42c8c793f4ab18c76cbfe53043876/artifacts
+deleted_time: 1744485439991
+end_time: 1744482376610
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: deleted
+run_id: 64e42c8c793f4ab18c76cbfe53043876
+run_name: mysterious-crane-15
+run_uuid: 64e42c8c793f4ab18c76cbfe53043876
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744482376515
+status: 3
+tags: []
+user_id: pesso
