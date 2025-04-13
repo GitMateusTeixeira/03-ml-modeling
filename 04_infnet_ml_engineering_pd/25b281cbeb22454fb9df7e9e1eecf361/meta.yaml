@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/25b281cbeb22454fb9df7e9e1eecf361/artifacts
+end_time: 1744555072598
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: active
+run_id: 25b281cbeb22454fb9df7e9e1eecf361
+run_name: extract_prod_features_node
+run_uuid: 25b281cbeb22454fb9df7e9e1eecf361
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744555072383
+status: 3
+tags: []
+user_id: pesso
