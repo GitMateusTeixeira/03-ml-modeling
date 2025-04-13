@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/cbce2c8009bd455eb401b3e08b0e4dcd/artifacts
+end_time: 1744564857445
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: active
+run_id: cbce2c8009bd455eb401b3e08b0e4dcd
+run_name: exultant-squid-190
+run_uuid: cbce2c8009bd455eb401b3e08b0e4dcd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744564857321
+status: 3
+tags: []
+user_id: pesso
