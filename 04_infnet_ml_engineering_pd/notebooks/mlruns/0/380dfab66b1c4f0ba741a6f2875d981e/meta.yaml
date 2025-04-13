@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/notebooks/mlruns/0/380dfab66b1c4f0ba741a6f2875d981e/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 380dfab66b1c4f0ba741a6f2875d981e
+run_name: gifted-jay-502
+run_uuid: 380dfab66b1c4f0ba741a6f2875d981e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744493891207
+status: 1
+tags: []
+user_id: pesso
