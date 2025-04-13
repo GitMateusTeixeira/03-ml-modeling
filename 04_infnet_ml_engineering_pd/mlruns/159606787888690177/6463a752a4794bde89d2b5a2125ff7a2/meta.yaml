@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/6463a752a4794bde89d2b5a2125ff7a2/artifacts
+end_time: 1744564858879
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: active
+run_id: 6463a752a4794bde89d2b5a2125ff7a2
+run_name: enthused-moth-601
+run_uuid: 6463a752a4794bde89d2b5a2125ff7a2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744564858530
+status: 3
+tags: []
+user_id: pesso
