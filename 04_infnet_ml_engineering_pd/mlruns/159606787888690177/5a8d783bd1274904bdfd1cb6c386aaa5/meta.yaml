@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/5a8d783bd1274904bdfd1cb6c386aaa5/artifacts
+deleted_time: 1744485530150
+end_time: 1744485318289
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: deleted
+run_id: 5a8d783bd1274904bdfd1cb6c386aaa5
+run_name: intrigued-finch-843
+run_uuid: 5a8d783bd1274904bdfd1cb6c386aaa5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744485318202
+status: 3
+tags: []
+user_id: pesso

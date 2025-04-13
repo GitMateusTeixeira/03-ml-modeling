@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/05c2b508da9e405caf7647276034220f/artifacts
+end_time: 1744485672481
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: active
+run_id: 05c2b508da9e405caf7647276034220f
+run_name: tasteful-cod-370
+run_uuid: 05c2b508da9e405caf7647276034220f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744485672368
+status: 3
+tags: []
+user_id: pesso
