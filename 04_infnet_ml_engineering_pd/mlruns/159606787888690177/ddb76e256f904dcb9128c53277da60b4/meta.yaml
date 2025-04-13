@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/ddb76e256f904dcb9128c53277da60b4/artifacts
+end_time: 1744566300245
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: active
+run_id: ddb76e256f904dcb9128c53277da60b4
+run_name: indecisive-whale-424
+run_uuid: ddb76e256f904dcb9128c53277da60b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744566300063
+status: 3
+tags: []
+user_id: pesso
