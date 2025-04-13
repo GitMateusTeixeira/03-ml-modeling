@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/17/6570d98fa11448f5a5c0207ee9dbac48/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '324186593109200880'
+lifecycle_stage: active
+run_id: 6570d98fa11448f5a5c0207ee9dbac48
+run_name: smiling-stork-769
+run_uuid: 6570d98fa11448f5a5c0207ee9dbac48
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744477751839
+status: 1
+tags: []
+user_id: pesso

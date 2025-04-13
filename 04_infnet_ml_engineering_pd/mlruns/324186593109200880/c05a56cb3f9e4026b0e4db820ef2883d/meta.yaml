@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/17/c05a56cb3f9e4026b0e4db820ef2883d/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '324186593109200880'
+lifecycle_stage: active
+run_id: c05a56cb3f9e4026b0e4db820ef2883d
+run_name: gaudy-tern-686
+run_uuid: c05a56cb3f9e4026b0e4db820ef2883d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744485425293
+status: 1
+tags: []
+user_id: pesso

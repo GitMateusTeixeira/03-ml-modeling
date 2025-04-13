@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/17/5623878e62d0455884aeb585a863de0c/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '324186593109200880'
+lifecycle_stage: active
+run_id: 5623878e62d0455884aeb585a863de0c
+run_name: invincible-auk-4
+run_uuid: 5623878e62d0455884aeb585a863de0c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744485301545
+status: 1
+tags: []
+user_id: pesso

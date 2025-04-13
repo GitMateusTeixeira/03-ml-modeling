@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/17/7a2d8df1e902471bbc72336eb13cc645/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '324186593109200880'
+lifecycle_stage: active
+run_id: 7a2d8df1e902471bbc72336eb13cc645
+run_name: fortunate-trout-803
+run_uuid: 7a2d8df1e902471bbc72336eb13cc645
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744485140609
+status: 1
+tags: []
+user_id: pesso
