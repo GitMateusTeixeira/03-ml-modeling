@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/6d480398e1904707a0b71ae94d73676f/artifacts
+end_time: 1744495848657
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: active
+run_id: 6d480398e1904707a0b71ae94d73676f
+run_name: resilient-crow-822
+run_uuid: 6d480398e1904707a0b71ae94d73676f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744495848393
+status: 3
+tags: []
+user_id: pesso

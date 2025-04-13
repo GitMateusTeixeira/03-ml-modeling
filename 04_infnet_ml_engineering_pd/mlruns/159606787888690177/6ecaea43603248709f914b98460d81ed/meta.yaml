@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/6ecaea43603248709f914b98460d81ed/artifacts
+deleted_time: 1744485440018
+end_time: 1744482377554
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: deleted
+run_id: 6ecaea43603248709f914b98460d81ed
+run_name: grandiose-shrike-263
+run_uuid: 6ecaea43603248709f914b98460d81ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744482377311
+status: 3
+tags: []
+user_id: pesso

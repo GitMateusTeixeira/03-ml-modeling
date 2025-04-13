@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/159606787888690177/6df1241084a7447cbdfc7feb9cc5bcd9/artifacts
+end_time: 1744491553164
+entry_point_name: ''
+experiment_id: '159606787888690177'
+lifecycle_stage: active
+run_id: 6df1241084a7447cbdfc7feb9cc5bcd9
+run_name: rumbling-bat-389
+run_uuid: 6df1241084a7447cbdfc7feb9cc5bcd9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744491553034
+status: 3
+tags: []
+user_id: pesso
