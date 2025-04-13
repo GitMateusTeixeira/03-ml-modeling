@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/0/10ef58d5994a42b29495509e9d75b4d9/artifacts
+end_time: 1744480512116
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 10ef58d5994a42b29495509e9d75b4d9
+run_name: defiant-loon-226
+run_uuid: 10ef58d5994a42b29495509e9d75b4d9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744480511839
+status: 3
+tags: []
+user_id: pesso

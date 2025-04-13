@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/0/2a06cb1c2baf4a93bfb3856e7a66807f/artifacts
+end_time: 1744481083944
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2a06cb1c2baf4a93bfb3856e7a66807f
+run_name: defiant-owl-882
+run_uuid: 2a06cb1c2baf4a93bfb3856e7a66807f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744481083856
+status: 3
+tags: []
+user_id: pesso

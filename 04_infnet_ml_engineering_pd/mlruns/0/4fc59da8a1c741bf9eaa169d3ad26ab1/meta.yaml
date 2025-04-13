@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/0/4fc59da8a1c741bf9eaa169d3ad26ab1/artifacts
+end_time: 1744480511423
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4fc59da8a1c741bf9eaa169d3ad26ab1
+run_name: skillful-fawn-65
+run_uuid: 4fc59da8a1c741bf9eaa169d3ad26ab1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744480511344
+status: 3
+tags: []
+user_id: pesso

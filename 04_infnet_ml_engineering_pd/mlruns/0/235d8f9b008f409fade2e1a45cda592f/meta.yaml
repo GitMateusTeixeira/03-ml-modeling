@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/0/235d8f9b008f409fade2e1a45cda592f/artifacts
+end_time: 1744479131117
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 235d8f9b008f409fade2e1a45cda592f
+run_name: handsome-skink-798
+run_uuid: 235d8f9b008f409fade2e1a45cda592f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744479131003
+status: 3
+tags: []
+user_id: pesso

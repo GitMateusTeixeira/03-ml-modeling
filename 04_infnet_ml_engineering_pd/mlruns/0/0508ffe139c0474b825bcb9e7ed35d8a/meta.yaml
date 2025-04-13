@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/0/0508ffe139c0474b825bcb9e7ed35d8a/artifacts
+end_time: 1744480511664
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0508ffe139c0474b825bcb9e7ed35d8a
+run_name: bemused-grouse-930
+run_uuid: 0508ffe139c0474b825bcb9e7ed35d8a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744480511534
+status: 3
+tags: []
+user_id: pesso
