@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/0/f1e9cd8c05504cb79df20faa80dde298/artifacts
+end_time: 1744477846564
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f1e9cd8c05504cb79df20faa80dde298
+run_name: fearless-bear-742
+run_uuid: f1e9cd8c05504cb79df20faa80dde298
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744477846467
+status: 3
+tags: []
+user_id: pesso

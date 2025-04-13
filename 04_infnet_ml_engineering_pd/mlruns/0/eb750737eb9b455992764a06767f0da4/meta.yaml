@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/0/eb750737eb9b455992764a06767f0da4/artifacts
+end_time: 1744478775507
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: eb750737eb9b455992764a06767f0da4
+run_name: omniscient-shoat-815
+run_uuid: eb750737eb9b455992764a06767f0da4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744478775440
+status: 3
+tags: []
+user_id: pesso

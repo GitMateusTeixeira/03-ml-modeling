@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/0/ecad1d14bde541f399dc3db0c767d866/artifacts
+end_time: 1744478852381
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ecad1d14bde541f399dc3db0c767d866
+run_name: skittish-fawn-592
+run_uuid: ecad1d14bde541f399dc3db0c767d866
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744478852304
+status: 3
+tags: []
+user_id: pesso

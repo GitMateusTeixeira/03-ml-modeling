@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pesso/Documents/DevProjects/GitHubRepositories/ml_models/infnet_04_ml_engineering_pd/mlruns/0/e8fdc1dc31fa48719ba6d759e08306ff/artifacts
+end_time: 1744478276852
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e8fdc1dc31fa48719ba6d759e08306ff
+run_name: able-dog-765
+run_uuid: e8fdc1dc31fa48719ba6d759e08306ff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744478276780
+status: 3
+tags: []
+user_id: pesso
