@@ -1,0 +1,12 @@
+# Arquivo de dependências para pip-tools
+scikit-learn
+numpy
+wordcloud
+seaborn
+matplotlib
+pandas
+tqdm
+spacy
+nltk
+kaggle
+pyldavis
