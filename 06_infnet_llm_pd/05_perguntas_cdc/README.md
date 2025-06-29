@@ -14,14 +14,10 @@ Projeto desenvolvido na disciplina de LLM para Aplicações Práticas em IA, com
 - <a href='#tecnologias'>2. Tecnologias</a>
 - <a href='#configuração-inicial'>3. Configuração inicial</a>
 - <a href='#fluxograma-do-projeto'>4. Fluxograma do projeto
-    - <a href='#parte-01-pegar-os-dados'>4.1. Pegar os dados
-    - <a href='#parte-02-pré-processamento-dos-dados'>4.2. Pré-processamento dos dados
-    - <a href='#parte-03-geração-de-documentos-spacy'>4.3. Geração de documentos `spaCy`
-    - <a href='#parte-04-lematização'>4.4. Lematização
-    - <a href='#parte-05-reconhecimento-de-entidades-nomeadas-ner'>4.5. Reconhecimento de Entidades Nomeadas (NER)
-    - <a href='#parte-06-bag-of-words'>4.6. Bag of Words
-    - <a href='#parte-07-extração-de-tópicos'>4.7. Extração de Tópicos
-    - <a href='#parte-08-visualização-dos-dados'>4.8. Visualização dos dados
+    - <a href='#parte-01-pegar-os-dados'>4.1. Preparação e configuração
+    - <a href='#parte-02-pré-processamento-dos-dados'>4.2. Construção do agente com LangChain
+    - <a href='#parte-03-geração-de-documentos-spacy'>4.3. Interface com o usuário via Streamlit
+    - <a href='#parte-04-lematização'>4.4. Geração de resposta
 - <a href='#conclusões-gerais'>5. Conclusões gerais</a>
 - <a href='#sobre-mim'>6. Sobre mim</a> 
 
@@ -86,7 +82,7 @@ O ambiente é preparado com os arquivos `config.yaml` e `requirements.txt`, onde
 No arquivo `agent.py`, os documentos são transformados em embeddings e armazenados em uma base vetorial com FAISS. Um agente é criado utilizando ferramentas da LangChain, capaz de recuperar informações e responder consultas a partir do conteúdo carregado.
 
 
-### Parte 03.  Interface com o usuário via Streamlit
+### Parte 03. Interface com o usuário via Streamlit
 
 ⬆️ <a href='#índice'>Voltar ao início</a>
 
