@@ -14,10 +14,10 @@ Projeto desenvolvido na disciplina de LLM para Aplicações Práticas em IA, com
 - <a href='#tecnologias'>2. Tecnologias</a>
 - <a href='#configuração-inicial'>3. Configuração inicial</a>
 - <a href='#fluxograma-do-projeto'>4. Fluxograma do projeto
-    - <a href='#parte-01-pegar-os-dados'>4.1. Preparação e configuração
-    - <a href='#parte-02-pré-processamento-dos-dados'>4.2. Construção do agente com LangChain
-    - <a href='#parte-03-geração-de-documentos-spacy'>4.3. Interface com o usuário via Streamlit
-    - <a href='#parte-04-lematização'>4.4. Geração de resposta
+    - <a href='#parte-01-preparação-e-configuração'>4.1. Preparação e configuração
+    - <a href='#parte-02-construção-do-agente-com-langchain'>4.2. Construção do agente com LangChain
+    - <a href='#parte-03-interface-com-o-usuário-via-streamlit'>4.3. Interface com o usuário via Streamlit
+    - <a href='#parte-04-geração-de-resposta'>4.4. Geração de resposta
 - <a href='#conclusões-gerais'>5. Conclusões gerais</a>
 - <a href='#sobre-mim'>6. Sobre mim</a> 
 
