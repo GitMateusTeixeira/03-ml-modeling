@@ -2,7 +2,7 @@
 
 <img style='width:350px' src='./assets/logo_infnetv2.png' alt='Infnet logo' align='left'>
 <br>
-Projeto desenvolvido na disciplina de LLM para Aplicações Práticas em IA, com foco em reconhecimento de entidades nomeadas (NER) em notícias e análise de organizações mencionadas em textos jornalísticos.
+Projetos desenvolvidos na disciplina de LLM para Aplicações Práticas em IA, com foco em NER, análise de dados com transformers e sistemas interativos baseados em LangChain e Streamlit.
 
 <br>
 <br>
@@ -12,23 +12,17 @@ Projeto desenvolvido na disciplina de LLM para Aplicações Práticas em IA, com
 
 - <a href='#contexto'>1. Contexto</a>
 - <a href='#tecnologias'>2. Tecnologias</a>
-- <a href='#fluxograma-do-projeto'>3. Fluxograma do projeto</a>
-    - <a href='#parte-01-pegar-os-dados'>3.1. Pegar os dados
-    - <a href='#parte-02-processamento-inicial-dos-textos'>3.2. Processamento inicial dos textos
-    - <a href='#parte-03-aplicação-do-modelo-de-ner'>3.3. Aplicação do modelo de NER
-    - <a href='#parte-04-extração-de-organizações'>3.4. Extração de organizações
-    - <a href='#parte-05-análise-estatística-e-visualização'>3.5. Análise estatística e visualização
-- <a href='#conclusões-gerais'>4. Conclusões gerais</a>
-- <a href='#sobre-mim'>5. Sobre mim</a> 
+- <a href='#configuração-inicial'>3. Configuração inicial</a>
+- <a href='#estrutura-dos-arquivos'>4. Estrutura dos arquivos
+- <a href='#análise-de-dados-com-ner'>5. Estrutura dos arquivos
+- <a href='#aplicativo-de-perguntas-e-respostasr'>6. Aplicativo de perguntas e respostas
+- <a href='#conclusões-gerais'>7. Conclusões gerais</a>
+- <a href='#sobre-mim'>8. Sobre mim</a> 
 
 
 ## Contexto
 
-Este projeto foi desenvolvido no contexto da disciplina de Inteligência Artificial Generativa para Linguagem (Large Language Model), e visa aplicar técnicas de reconhecimento de entidades nomeadas (NER) em textos jornalísticos em português. 
-
-A partir do modelo `monilouise/ner_pt_br`, foram extraídas entidades de notícias da seção “Mercado” da Folha UOL, publicadas no primeiro trimestre de 2015. 
-
-O objetivo foi identificar as organizações mais citadas no período, utilizando ferramentas de processamento de linguagem natural, visualização de dados e análise estatística para revelar padrões de menções no contexto econômico.
+Estes projetos foram desenvolvidos no contexto da disciplina de Inteligência Artificial Generativa para Linguagem (Large Language Model), e visam explorar, na prática, o potencial de modelos de linguagem na resolução de problemas reais. As atividades abrangeram desde o reconhecimento de entidades em textos jornalísticos usando transformers e NER, até o desenvolvimento de um sistema de perguntas e respostas interativo com LLMs, LangChain e Streamlit. O objetivo foi aplicar conceitos teóricos em soluções concretas e acessíveis, promovendo experimentação e pensamento crítico.
 
 
 ## Tecnologias
@@ -49,7 +43,8 @@ Principais bibliotecas:
 
 - <img style='width:30px; vertical-align: middle; margin-right: 10px' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt='pandas_logo'> Pandas 2.2.3
 
-- <img style='width:30px; vertical-align: middle; margin-right: 10px' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pypi/pypi-original.svg"/> Pypi pip-tools
+
+- <img style='width:30px; vertical-align: middle; margin-right: 10px' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pypi/pypi-original.svg"/> Pypi pip-tools          
 
 - <img style='width:30px; vertical-align: middle; margin-right: 10px' src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg' alt='scikit-learn_logo'> Scikit-learn 1.4.2
 
@@ -57,59 +52,70 @@ Principais bibliotecas:
 
 - <img style='width:30px; vertical-align: middle; margin-right: 10px' src="https://upload.wikimedia.org/wikipedia/commons/8/88/SpaCy_logo.svg" alt='spacy_logo'> spaCy 3.8.4
 
+- <img style='width:30px; vertical-align: middle; margin-right: 10px'  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg" /> Streamlit 1.44.1
+
 - <img style='width:30px; vertical-align: middle; margin-right: 10px' src="https://raw.githubusercontent.com/tqdm/img/47dd765d1c88d70f65a3d2ce08430ffb175a9d53/logo.svg" alt='tqdm_logo'> tqdm 4.67.1
 
 - <img style='width:30px; vertical-align: middle; margin-right: 10px' src="./assets/general_lib.png" alt='wordcloud_logo'> Wordcloud 1.9.4
 
 
-## Fluxograma do projeto
-
-O projeto segue o seguinte fluxograma (vamos mostrar por partes):
-
-### Parte 01. Pegar os dados
+## Configuração inicial
 
 ⬆️ <a href='#índice'>Voltar ao início</a>
 
-Os dados utilizados neste projeto foram obtidos a partir do Kaggle. O download foi realizado por meio de sua API, que permitiu acesso direto ao conjunto de notícias extraídas da seção "Mercado" da Folha UOL News Dataset.
+O projeto foi realizado no ambiente virtual '🌐 env_25E2_3_v2, instalado pelo Anconda.
 
-Para isso, o comando `kaggle.api.dataset_download_files()` foi utilizado, garantindo que os arquivos fossem salvos no diretório especificado (`"../data/01-raw/"`). Esse processo facilita a manipulação dos dados no restante do pipeline de análise.
-
-
-### Parte 02. Processamento inicial dos textos
-
-⬆️ <a href='#índice'>Voltar ao início</a>
-
-Os textos foram normalizados com limpeza básica: remoção de quebras de linha, caracteres indesejados e duplicidades. Foram também criadas colunas auxiliares para armazenar os resultados posteriores da etapa de NER.
+Para garantir a instalação eficiente das dependências, utilizamos o pip-tools, uma ferramenta que permite gerenciar pacotes de forma controlada e reproduzível. Foi feita a compilação do arquivo '📄 requirements.in' com o comando `pip-compile requirements.in` e para a instalação dos pacotes, recomenda-se a utilização do comenado `pip install -r requirements.txt --user` para evitar erros de permissões.
 
 
-### Parte 03. Aplicação do modelo de NER
+## Estrutura dos arquivos
 
-⬆️ <a href='#índice'>Voltar ao início</a>
+Como se tratam de dois projetos distintos. Esse repositório possui a seguinte estrutura:
 
-O modelo `monilouise/ner_pt_br`, baseado em transformers, foi aplicado para identificar entidades nomeadas nos textos. Essa etapa foi feita com pipeline do Hugging Face e uso de tqdm para monitorar o progresso.
+- 📁 '02_quizzes_hugging_face/' : contendo os prints do curso de `NLP` da Hugging Face, contendo os quizes e o certificado do Módulo `Fundamentals of LLMs`.
 
+- 📁 '03_analise_de_dados_com_ner/' : contendo os arquivos de análise textual com `NER`, do corpus retirado do Kaggle.
 
-### Parte 04. Extração de organizações
+- 📁 '05_perguntas_cdc/' : contendo os arquivos do aplicativo de perguntas e respostas sobre Direito do Consumidor, utilizando `Streamlit`, `LLM` e `LangChain`.
 
-⬆️ <a href='#índice'>Voltar ao início</a>
+- 📄 'mateusteixeiraramosdasilva_iagenerativaparalinguagem_pd.pdf': documento com as rspostas do PD.
 
-A partir das entidades extraídas, foi feita a filtragem para reter apenas aquelas com classificação ligada a organizações (ORG). Também foi feita a reconstrução de tokens fragmentados (ex: “FG” + “##V”) e normalização dos nomes das entidades.
+- 📄'L9099.pdf': contendo a Lei dos Juizados Especiais (Lei n. 9.099/95) para teste de envio de documentos no aplicativo.
 
-
-### Parte 05. Análise estatística e visualização
+## Análise de dados com NER
 
 ⬆️ <a href='#índice'>Voltar ao início</a>
 
-Com os nomes de organizações limpos, foi gerado um ranking com as mais citadas. A visualização dos dados incluiu gráficos de barras e nuvens de palavras para destacar as principais instituições mencionadas.
+O projeto de Reconhecimento de Entidades Nomeadas (NER) teve como base o conjunto de dados da Folha UOL News Dataset, com foco nas notícias publicadas na seção “Mercado” durante o primeiro trimestre de 2015. 
+
+Utilizando o modelo pré-treinado `monilouise/ner_pt_br`, as entidades foram extraídas por meio de um pipeline do Hugging Face Transformers, e posteriormente analisadas para identificar aquelas mais relevantes para o contexto econômico do período. O processo de extração foi cuidadosamente estruturado em etapas, desde a coleta e pré-processamento dos dados até a aplicação do modelo e consolidação dos resultados.
+
+Com as entidades nomeadas obtidas, o projeto concentrou-se em isolar as organizações mencionadas nas notícias. Após diversos tratamentos de texto e limpezas semânticas, foi possível gerar um ranking das instituições mais citadas, entre as quais se destacaram HSBC, FGV e Apple. Além disso, visualizações gráficas — como gráficos de barras e nuvens de palavras — foram produzidas para tornar mais acessível a interpretação dos dados e reforçar visualmente os padrões encontrados no corpus analisado.
+
+Como parte do relatório final, foram documentadas a metodologia adotada, as decisões de pré-processamento e os critérios utilizados na remoção de termos irrelevantes, como "Folha" e "Brasil", que não contribuíam para a análise específica de organizações. O projeto evidenciou o potencial de modelos NER aplicados a textos jornalísticos em português, servindo como base para aplicações futuras em análise de tendências, monitoramento de reputação e exploração de temas econômicos recorrentes na mídia nacional.
+
+## Aplicativo de perguntas e respostas
+
+⬆️ <a href='#índice'>Voltar ao início</a>
+
+O projeto consistiu no desenvolvimento de uma aplicação de perguntas e respostas sobre o Direito do Consumidor. A interface foi construída com Streamlit e incluiu recursos como perguntas sugeridas, carregamento de arquivos adicionais, visualização das fontes utilizadas pelo modelo e exportação do histórico da conversa. O foco foi permitir que o usuário formulasse dúvidas e obtivesse respostas baseadas em conteúdos jurídicos relevantes.
+
+A arquitetura utilizou LangChain para estruturar o agente responsável pelas respostas, integrando-o ao modelo da Groq. Os documentos de referência — como o Código de Defesa do Consumidor, o Código Civil e materiais complementares — foram carregados e organizados em uma base vetorial. A lógica de processamento ficou concentrada no arquivo agent.py, enquanto app.py definiu o fluxo e a interface da aplicação.
+
+Nos testes realizados, o sistema respondeu perguntas relacionadas a procedimentos legais e prazos de forma adequada. Foi possível observar que, embora o modelo ofereça respostas coerentes a questões objetivas, ele não substitui a avaliação individualizada de um profissional do Direito. O uso do aplicativo reforça o papel dos modelos de linguagem como ferramentas auxiliares em contextos educativos e informativos.
 
 
 ## Conclusões Gerais
 
 ⬆️ <a href='#índice'>Voltar ao início</a>
 
-Este projeto demonstrou a aplicação prática de modelos de linguagem para reconhecimento de entidades nomeadas em textos jornalísticos em português. Utilizando o modelo monilouise/ner_pt_br, foi possível identificar e filtrar organizações a partir das notícias da editoria “Mercado” da Folha UOL no primeiro trimestre de 2015, com foco na contagem e visualização das instituições mais citadas.
+Como conclusão geral, os projetos desenvolvidos ao longo da disciplina permitiram experimentar na prática o uso de modelos de linguagem em tarefas variadas, indo desde a análise de dados com reconhecimento de entidades até a criação de aplicações interativas com LLMs. 
 
-O processo incluiu etapas de coleta, limpeza, aplicação do modelo, reconstrução de tokens e análise estatística das entidades extraídas. As visualizações ajudaram a tornar os padrões mais visíveis e permitiram avaliar os dados de forma mais direta. O projeto também evidenciou limitações pontuais do modelo, como a fragmentação de nomes ou identificação imprecisa, indicando pontos a melhorar em futuros trabalhos
+Foi possível explorar fluxos de extração de informação, pré-processamento e visualização de resultados, além de estruturar agentes inteligentes com capacidade de consulta semântica e interação com o usuário.
+
+Essas experiências demonstraram como ferramentas como LangChain, Streamlit e modelos hospedados via API podem ser combinadas para resolver problemas práticos e contextualizados. 
+
+Ainda que existam limitações no uso de LLMs em domínios especializados como o jurídico, os resultados obtidos evidenciam o potencial dessas soluções para apoio educativo, organização de conhecimento e automação de consultas informacionais.
 
 
 ## Sobre mim
