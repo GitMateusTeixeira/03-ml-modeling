@@ -1,0 +1,32 @@
+# Bibliotecas em ordem alfabetica
+faiss-cpu   # Indexação Vetorial
+fitz
+fsspec==2024.3.1
+ipykernel   # Desenvolvimento em Jupyter
+ipython<9
+kaggle
+langchain
+langchain-community
+langchain-groq
+matplotlib
+nltk
+numpy<2
+openai
+pandas
+pyarrow<20
+PyPDF2         # Leitura de PDFs
+python-docx    # Leitura de arquivos DOCX
+pyyaml
+rich<14
+scikit-learn
+seaborn
+spacy
+streamlit
+tensorflow
+tiktoken       # Para contagem de tokens em LLMs
+torch
+torchaudio
+torchvision
+tqdm
+transformers
+wordcloud
